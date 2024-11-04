@@ -1,0 +1,293 @@
+m255
+K4
+z2
+!s11f vlog 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/u1500738/ECE_5710_6710_F24/modelsim
+T_opt
+!s110 1730686818
+V37SdFo0IjFlal9TPYe:LK3
+04 18 4 work tb_uart_can_bridge fast 0
+=1-ac1f6bab8055-67282f61-f2f5c-128686
+Z1 o-quiet -auto_acc_if_foreign -work uart_can_bridge_rtl +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2019.4;69
+T_opt1
+!s110 1730685069
+Vcd1P3oZh4K^Q9@jY5L:2n0
+04 9 4 work can_rx_tb fast 0
+=1-ac1f6bab8055-6728288d-9491c-11ac5e
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1730684694
+V<bRkJ=J8I^JjV_QnIQ7=42
+04 9 4 work can_tx_tb fast 0
+=1-ac1f6bab8055-67282716-3a573-117d7a
+R1
+R2
+n@_opt2
+R3
+R0
+vcan_rx
+Z4 !s110 1730686812
+!i10b 1
+!s100 >mi<nRcoJmj[XVNGckS692
+!s11b T5gc]Vf^Wo^4BVj079AAb2
+IelDcH;^Ycn6S4@]]GE8FO1
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 d/home/u1500738/Projects/uart_can_bridge
+w1730677834
+8/home/u1500738/Projects/uart_can_bridge/RTL/can_rx.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/can_rx.v
+!i122 -1
+L0 1
+Z7 OL;L;2019.4;69
+r1
+!s85 0
+31
+Z8 !s108 1730686812.000000
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/can_rx.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/can_rx.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vcan_rx_tb
+R4
+!i10b 1
+!s100 ]J4B]:jc1NTJbQCI7kQLf0
+!s11b ]@<N9<KBJ`B3PeG0OgEAW1
+IMclaA?HJb=8bkCC52V0h]2
+R5
+R6
+w1730685056
+8/home/u1500738/Projects/uart_can_bridge/RTL/can_rx_tb.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/can_rx_tb.v
+!i122 -1
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/can_rx_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/can_rx_tb.v|
+!i113 0
+R9
+R2
+vcan_tx
+Z10 !s110 1730686811
+!i10b 1
+!s100 o:=`lNjMB07@>LP][:>GW3
+!s11b nbVQ9;B>lm]IAeE9T@>3W1
+I_a_ZJlb2hhK9X8<oSkVC;2
+R5
+R6
+w1730677487
+8/home/u1500738/Projects/uart_can_bridge/RTL/can_tx.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/can_tx.v
+!i122 -1
+L0 1
+R7
+r1
+!s85 0
+31
+Z11 !s108 1730686811.000000
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/can_tx.v|
+!s90 -reportprogress|300|-work|uart_can_bridge_rtl|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/can_tx.v|
+!i113 0
+Z12 o-work uart_can_bridge_rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vcan_tx_tb
+R10
+!i10b 1
+!s100 AVQeM2Ll755m>I6nPF:Nh1
+!s11b JA0=80C2?8Ha;mZ^]Sg^U2
+IT5eZeF0YKFPB2RdU3ni4n1
+R5
+R6
+w1730684681
+8/home/u1500738/Projects/uart_can_bridge/RTL/can_tx_tb.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/can_tx_tb.v
+!i122 -1
+L0 4
+R7
+r1
+!s85 0
+31
+R11
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/can_tx_tb.v|
+!s90 -reportprogress|300|-work|uart_can_bridge_rtl|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/can_tx_tb.v|
+!i113 0
+R12
+R2
+vtb_can_to_uart
+!s110 1730685065
+!i10b 1
+!s100 We@QWYDA9i;8cMY6?Z9`F2
+!s11b fkF2c6gYiIA`201_hRcml1
+InGW9>TH6L^^8b94Z0of4Z1
+R5
+R6
+w1730680421
+8/home/u1500738/Projects/uart_can_bridge/RTL/can_to_uart_tb.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/can_to_uart_tb.v
+!i122 -1
+L0 3
+R7
+r1
+!s85 0
+31
+!s108 1730685065.000000
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/can_to_uart_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/can_to_uart_tb.v|
+!i113 0
+R9
+R2
+vtb_uart_can_bridge
+R4
+!i10b 1
+!s100 ee1eU^QfZ7^[_@AHZY5NE0
+!s11b ZIQS93YBbSKmo6UMY8LFT2
+I@k7HIc2Um8:Xz]@F:Q76>2
+R5
+R6
+w1730686782
+8/home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge_tb.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge_tb.v
+!i122 -1
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge_tb.v|
+!i113 0
+R9
+R2
+vuart_can_bridge
+R4
+!i10b 1
+!s100 VzBF4LUGADd[3]WdXczJM0
+!s11b @1z]:70BFBl^z6_IWH4c]0
+I?<JU?gmX=L>ZGUbiligM01
+R5
+R6
+w1730686724
+8/home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge.v
+!i122 -1
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge.v|
+!i113 0
+R9
+R2
+vuart_rx
+R4
+!i10b 1
+!s100 AG>]nM0QO4?G>^;H:FUeN0
+!s11b @H[<81oQmIcB@kK;mDnMN3
+IUQoaf<AGgiXh=RC]DQIEL0
+R5
+R6
+w1730677461
+8/home/u1500738/Projects/uart_can_bridge/RTL/uart_rx.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/uart_rx.v
+!i122 -1
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/uart_rx.v|
+!s90 -reportprogress|300|-work|uart_can_bridge_rtl|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/uart_rx.v|
+!i113 0
+R12
+R2
+vuart_rx_tb
+R4
+!i10b 1
+!s100 gN6UaFkHFi5dHkiVkFK?a3
+!s11b JWBB:0E9L<A5>QNncAAfH1
+Ikf;Vl<?bjO;?JKzZ2aE]N3
+R5
+R6
+w1730684339
+8/home/u1500738/Projects/uart_can_bridge/RTL/uart_rx_tb.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/uart_rx_tb.v
+!i122 -1
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/uart_rx_tb.v|
+!s90 -reportprogress|300|-work|uart_can_bridge_rtl|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/uart_rx_tb.v|
+!i113 0
+R12
+R2
+vuart_tx
+R10
+!i10b 1
+!s100 DFafYBahgVJjo@D8IjWC12
+!s11b PGnTRd4Ke[Y7SI:@z66ng2
+I@98Ea@iS1oJEYz^WoJ4G]1
+R5
+R6
+w1730677830
+8/home/u1500738/Projects/uart_can_bridge/RTL/uart_tx.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/uart_tx.v
+!i122 -1
+L0 1
+R7
+r1
+!s85 0
+31
+R11
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/uart_tx.v|
+!s90 -reportprogress|300|-work|uart_can_bridge_rtl|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/uart_tx.v|
+!i113 0
+R12
+R2
+vuart_tx_tb
+R4
+!i10b 1
+!s100 =_oF:05KHz>nMb6[1Y]II2
+!s11b LYWL4RgmcY^7<2_?]`J>71
+ID;JY:62XOLUIfje]NPnRS0
+R5
+R6
+w1730683996
+8/home/u1500738/Projects/uart_can_bridge/RTL/uart_tx_tb.v
+F/home/u1500738/Projects/uart_can_bridge/RTL/uart_tx_tb.v
+!i122 -1
+L0 3
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/u1500738/Projects/uart_can_bridge/RTL/uart_tx_tb.v|
+!s90 -reportprogress|300|-work|uart_can_bridge_rtl|-vopt|-stats=none|/home/u1500738/Projects/uart_can_bridge/RTL/uart_tx_tb.v|
+!i113 0
+R12
+R2

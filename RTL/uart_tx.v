@@ -4,7 +4,7 @@ module uart_tx (
   input wire T_byte,
   input wire clock,
   input wire reset,
-  input wire [7:0] Data_Bus,
+  input wire [7:0] uart_tx_data_Bus,
   output reg Serial_out
 );
 	
@@ -44,7 +44,7 @@ module uart_tx (
     case (state)
       IDLE: begin
         if (Byte_ready && Load_XMT_datareg) begin
-          shift_reg = {1'b1, Data_Bus, 1'b0};   //Load Shift Reg
+          shift_reg = {1'b1, uart_tx_data_Bus, 1'b0};   //Load Shift Reg
           next_state = START;
         end else begin
           next_state = IDLE;
@@ -68,9 +68,9 @@ module uart_tx (
         end
       end
       STOP: begin           //Reset Device
-	Serial_out = 1;
+	      Serial_out = 1;
         next_state = IDLE;
-	Status_reg = 0;
+	      Status_reg = 0;
         shift_reg <= 10'b1111111111;
       end
 

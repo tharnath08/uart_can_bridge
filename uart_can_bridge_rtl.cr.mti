@@ -1,0 +1,66 @@
+/home/u1500738/Projects/uart_can_bridge/RTL/can_rx.v {1 {vlog -work work -vopt -stats=none /home/u1500738/Projects/uart_can_bridge/RTL/can_rx.v
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module can_rx
+
+Top level modules:
+	can_rx
+
+} {} {}} /home/u1500738/Projects/uart_can_bridge/RTL/uart_tx.v {2 {vlog -work uart_can_bridge_rtl -vopt -stats=none /home/u1500738/Projects/uart_can_bridge/RTL/uart_tx.v
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module uart_tx
+** Warning: /home/u1500738/Projects/uart_can_bridge/RTL/uart_tx.v(64): (vlog-2182) 'Status_reg' might be read before written in always_comb or always @* block.
+
+Top level modules:
+	uart_tx
+
+} {} {}} /home/u1500738/Projects/uart_can_bridge/RTL/can_rx_tb.v {1 {vlog -work work -vopt -stats=none /home/u1500738/Projects/uart_can_bridge/RTL/can_rx_tb.v
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module can_rx_tb
+
+Top level modules:
+	can_rx_tb
+
+} {} {}} /home/u1500738/Projects/uart_can_bridge/RTL/uart_tx_tb.v {1 {vlog -work uart_can_bridge_rtl -vopt -stats=none /home/u1500738/Projects/uart_can_bridge/RTL/uart_tx_tb.v
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module uart_tx_tb
+
+Top level modules:
+	uart_tx_tb
+
+} {} {}} /home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge.v {1 {vlog -work work -vopt -stats=none /home/u1500738/Projects/uart_can_bridge/RTL/uart_can_bridge.v
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module uart_can_bridge
+
+Top level modules:
+	uart_can_bridge
+
+} {} {}} /home/u1500738/Projects/uart_can_bridge/RTL/uart_rx.v {1 {vlog -work uart_can_bridge_rtl -vopt -stats=none /home/u1500738/Projects/uart_can_bridge/RTL/uart_rx.v
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module uart_rx
+
+Top level modules:
+	uart_rx
+
+} {} {}} /home/u1500738/Projects/uart_can_bridge/RTL/can_tx.v {2 {vlog -work uart_can_bridge_rtl -vopt -stats=none /home/u1500738/Projects/uart_can_bridge/RTL/can_tx.v
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module can_tx
+** Warning: /home/u1500738/Projects/uart_can_bridge/RTL/can_tx.v(70): (vlog-2182) 'status_reg' might be read before written in always_comb or always @* block.
+
+Top level modules:
+	can_tx
+
+} {} {}} /home/u1500738/Projects/uart_can_bridge/RTL/can_tx_tb.v {1 {vlog -work uart_can_bridge_rtl -vopt -stats=none /home/u1500738/Projects/uart_can_bridge/RTL/can_tx_tb.v
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module can_tx_tb
+
+Top level modules:
+	can_tx_tb
+
+} {} {}} /home/u1500738/Projects/uart_can_bridge/RTL/uart_rx_tb.v {1 {vlog -work uart_can_bridge_rtl -vopt -stats=none /home/u1500738/Projects/uart_can_bridge/RTL/uart_rx_tb.v
+QuestaSim-64 vlog 2019.4 Compiler 2019.10 Oct 15 2019
+-- Compiling module uart_rx_tb
+
+Top level modules:
+	uart_rx_tb
+
+} {} {}}
