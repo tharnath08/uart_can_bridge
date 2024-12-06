@@ -1,0 +1,21 @@
+CADENCE IHNL111419
+
+SC_LIB AND2X1 schematic cds0
+SC_LIB MUX2X1 schematic cds1
+SC_LIB NOR2X1 schematic cds2
+SC_LIB NAND2X1 schematic cds3
+SC_LIB OR2X1 schematic cds4
+SC_LIB INVX1 schematic cds5
+SC_LIB INVX2 schematic cds6
+SC_LIB INVX8 schematic cds7
+SC_LIB XOR2X1 schematic cds8
+SC_LIB NAND3X1 schematic cds9
+SC_LIB INVX4 schematic cds10
+SC_LIB DFFQSRX1 schematic cds11
+PADS_LIB pad_in schematic cds12
+PADS_LIB pad_out schematic cds13
+PADS_LIB pad_gnd schematic cds14
+PADS_LIB pad_vdd schematic cds15
+PADS_LIB pad_corner schematic cds16
+SC_LIB ANTENNA schematic cds17
+bridge_soc_top bridge_soc_top schematic cds18

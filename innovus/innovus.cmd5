@@ -1,0 +1,65 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sun Dec  1 20:07:05 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_design_uniquify 1
+set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+set init_mmmc_file { CONF/picosoc.view }
+set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+set init_io_file { SCRIPTS/place_io_pad.io }
+set init_pwr_net { VDD }
+set init_gnd_net { VSS }
+init_design
+saveDesign DBS/bridge_soc_top-import.enc
+setDrawView fplan
+fit
+floorPlan -site core7T -s 1070 910 80 80 80 80
+setDrawView fplan
+fit
+placeInstance soc/uart_tx 318 315 R180
+pan -679.01750 -157.01900
+zoomBox -687.49000 -211.65450 917.36100 1225.02950
+zoomBox -542.30650 -130.15650 617.19850 907.84800
+zoomBox -434.49750 -65.63750 403.24500 684.32100
+zoomBox -392.39350 -40.44000 319.68750 597.02450
+zoomBox -326.18600 -0.81750 188.29300 459.75100
+pan -38.60250 122.37250
+zoomBox -454.41050 -406.29000 383.33350 343.66950
+zoomBox -511.40350 -483.36450 474.17800 398.94150
+zoomBox -370.20100 -287.05850 235.06900 254.78750
+zoomBox -262.78450 -137.72300 53.17100 145.12450
+zoomBox -206.71250 -59.76950 -41.78100 87.87950
+zoomBox -177.44200 -19.07650 -91.34700 57.99700
+zoomBox -165.10850 -1.92900 -112.23450 45.40450
+zoomBox -152.88200 15.06900 -132.94000 32.92150
+zoomBox -148.27150 21.47950 -140.74950 28.21350
+zoomBox -149.34450 19.98800 -138.93300 29.30850
+zoomBox -152.88450 15.06700 -132.93900 32.92250
+zoomBox -157.53800 8.59750 -125.05950 37.67250
+zoomBox -168.58050 -6.75400 -106.36150 48.94550
+zoomBox -511.50700 -483.50200 474.33850 399.04000
+zoomBox -1115.98700 -1323.87700 1497.95200 1016.15650
+zoomBox -741.49350 -803.23950 863.79200 633.83350
+zoomBox -511.50850 -483.50350 474.33850 399.04000
+zoomBox -455.45700 -403.73050 382.51300 346.43150
+pan 202.71750 253.36000
+zoomBox -457.08250 -475.91700 907.41200 745.59700
+pan 169.45850 125.91150
+zoomBox -389.87200 -688.92550 1498.70250 1001.75200
+zoomBox -651.68050 -1053.01800 1962.26350 1287.02000
+zoomBox -818.17250 -1284.55550 2257.05600 1468.43050
+pan 99.45750 34.88300

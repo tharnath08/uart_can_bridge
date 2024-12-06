@@ -1,0 +1,51 @@
+*** Statistics for net list bridge_soc_top ***
+Number of cells      = 3741
+Number of nets       = 1086
+Number of tri-nets   = 0
+Number of degen nets = 1
+Number of pins       = 3782
+Number of i/os       = 8
+
+Number of nets with    1 terms = 1 (0.1%)
+Number of nets with    2 terms = 725 (66.8%)
+Number of nets with    3 terms = 218 (20.1%)
+Number of nets with    4 terms = 95 (8.7%)
+Number of nets with    5 terms = 16 (1.5%)
+Number of nets with    6 terms = 6 (0.6%)
+Number of nets with    7 terms = 2 (0.2%)
+Number of nets with    8 terms = 4 (0.4%)
+Number of nets with    9 terms = 1 (0.1%)
+Number of nets with >=10 terms = 18 (1.7%)
+
+*** 30 Primitives used:
+Primitive pad_vdd (1 insts)
+Primitive pad_out (2 insts)
+Primitive pad_in (6 insts)
+Primitive pad_gnd (1 insts)
+Primitive pad_fill_8 (14 insts)
+Primitive pad_fill_32 (20 insts)
+Primitive pad_fill_2 (14 insts)
+Primitive pad_fill_16 (14 insts)
+Primitive pad_fill_01 (76 insts)
+Primitive pad_fill_005 (48 insts)
+Primitive pad_corner (4 insts)
+Primitive XOR2X1 (8 insts)
+Primitive OR2X1 (24 insts)
+Primitive NOR2X1 (30 insts)
+Primitive NAND3X1 (105 insts)
+Primitive NAND2X1 (392 insts)
+Primitive MUX2X1 (161 insts)
+Primitive INVX8 (3 insts)
+Primitive INVX4 (1 insts)
+Primitive INVX2 (21 insts)
+Primitive INVX1 (2 insts)
+Primitive FILL8 (295 insts)
+Primitive FILL4 (441 insts)
+Primitive FILL32 (553 insts)
+Primitive FILL2 (469 insts)
+Primitive FILL16 (232 insts)
+Primitive FILL1 (474 insts)
+Primitive DFFQSRX1 (301 insts)
+Primitive ANTENNA (2 insts)
+Primitive AND2X1 (27 insts)
+************

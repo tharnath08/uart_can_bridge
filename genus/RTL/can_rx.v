@@ -64,24 +64,24 @@ module can_rx (
 
     // Combinational Block
     always @(*) begin
-        next_state = state;
+        next_state <= state;
 
         case (state)
-            IDLE: if (Can_rx == 0) next_state = START;  // Start of Frame detected
+            IDLE: if (Can_rx == 0) next_state <= START;  // Start of Frame detected
 
-            START: if (R_frame) next_state = RECEIVE_ID;  // Move to Identifier Field
+            START: if (R_frame) next_state <= RECEIVE_ID;  // Move to Identifier Field
 
-            RECEIVE_ID: if (R_frame && bit_count >= 11) next_state = RECEIVE_CTL;  // Move to Control Field
+            RECEIVE_ID: if (R_frame && bit_count >= 11) next_state <= RECEIVE_CTL;  // Move to Control Field
 
-            RECEIVE_CTL: if (R_frame && bit_count >= 15) next_state = RECEIVE_DATA;  // Move to Data Field
+            RECEIVE_CTL: if (R_frame && bit_count >= 15) next_state <= RECEIVE_DATA;  // Move to Data Field
 
-            RECEIVE_DATA: if (R_frame && bit_count >= 79) next_state = RECEIVE_CRC;  // Move to CRC Field
+            RECEIVE_DATA: if (R_frame && bit_count >= 79) next_state <= RECEIVE_CRC;  // Move to CRC Field
 
-            RECEIVE_CRC: if (R_frame && bit_count >= 95) next_state = STOP;  // Move to Stop Field
+            RECEIVE_CRC: if (R_frame && bit_count >= 95) next_state <= STOP;  // Move to Stop Field
 
-            STOP: if (R_frame) next_state = IDLE;  // Return to IDLE after STOP
+            STOP: if (R_frame) next_state <= IDLE;  // Return to IDLE after STOP
 
-            default: next_state = IDLE;
+            default: next_state <= IDLE;
         endcase
     end
 endmodule

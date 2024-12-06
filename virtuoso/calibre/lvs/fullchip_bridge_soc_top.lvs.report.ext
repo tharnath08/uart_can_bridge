@@ -1,0 +1,33 @@
+
+
+       #############################################################
+       ##                                                         ##
+       ##               C A L I B R E    S Y S T E M              ##
+       ##                                                         ##
+       ##    C I R C U I T   E X T R A C T I O N   R E P O R T    ##
+       ##                                                         ##
+       #############################################################
+
+
+REPORT FILE NAME:         fullchip_bridge_soc_top.lvs.report.ext
+LAYOUT NAME:              fullchip_bridge_soc_top.calibre.db ('fullchip_bridge_soc_top')
+CREATION TIME:            Thu Dec  5 22:36:39 2024
+CURRENT DIRECTORY:        /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs
+USER NAME:                u1500738
+CALIBRE VERSION:          v2021.2_37.20    Tue Jun 1 14:42:29 PDT 2021
+
+
+
+Extraction Errors and Warnings for cell "fullchip_bridge_soc_top"
+-----------------------------------------------------------------
+
+WARNING:  Stamping conflict in SCONNECT - Multiple source nets stamp one target net.
+          Use LVS REPORT OPTION S or LVS SOFTCHK statement to obtain detailed information.
+
+
+
+WARNING: Invalid PATHCHK request "! POWER": no POWER nets present, operation aborted.
+
+
+WARNING: Invalid PATHCHK request "! GROUND": no GROUND nets present, operation aborted.
+

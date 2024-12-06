@@ -1,0 +1,21 @@
+catch { setAnalysisMode -analysisType bcwc }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -virtualIPO false }
+catch { setOptMode -preserveAllSequential false }
+catch { setExtractRCMode  -engine preRoute }
+catch { setPlaceMode -place_global_cong_effort auto }
+catch { setPlaceMode -place_global_max_density -1 }
+catch { setPlaceMode -place_global_place_io_pins false }
+catch { setPlaceMode -timingDriven true }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepInstInSdc false -keepFlatten true }
+catch { set_verify_drc_mode -check_only regular }
+catch { setImportMode -discardFloatingVNets false }
+catch { setImportMode -keepEmptyModule true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setRouteMode -earlyGlobalRouteSecondPG false }
+catch { setFPlanMode -defaultTechSite core7T }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -place_check_ignore_fixed_cell_list {} }
+catch { setFPlanMode -powerRailLayer {} }

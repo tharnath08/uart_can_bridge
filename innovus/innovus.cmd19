@@ -1,0 +1,56 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Dec  3 19:58:28 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_design_uniquify 1
+set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+set init_mmmc_file { CONF/picosoc.view }
+set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+set init_io_file { SCRIPTS/place_io_pad.io }
+set init_pwr_net { VDD }
+set init_gnd_net { VSS }
+init_design
+saveDesign DBS/bridge_soc_top-import.enc
+setDrawView fplan
+fit
+zoomBox -246.01750 -162.85100 954.40600 911.78450
+zoomBox -360.84450 -243.97000 1051.41900 1020.30750
+zoomBox -495.93500 -339.40350 1165.55200 1147.98200
+zoomBox -1625.05950 -1137.06750 2119.51450 2215.12550
+zoomBox -841.84000 -583.76650 1457.79650 1474.89900
+zoomBox -654.86500 -451.67900 1299.82650 1298.18700
+zoomBox -495.93550 -339.40450 1165.55200 1147.98150
+zoomBox -360.84550 -243.97100 1051.41900 1020.30700
+setLayerPreference node_power -isVisible 1
+setLayerPreference node_power -isVisible 0
+zoomBox -1579.43850 -1151.04450 1603.45100 1698.32100
+zoomBox -3295.74900 -2504.78600 2801.66750 2953.70350
+zoomBox -3941.63650 -3024.00150 3231.79500 3397.75100
+zoomBox -2280.09200 -1688.32050 2125.29200 2255.43850
+zoomBox -2746.74550 -2063.45350 2436.05900 2576.26300
+zoomBox -4701.50500 -3634.84400 3737.82750 3920.16000
+zoomBox -9340.17100 -7363.77200 6826.93950 7109.24300
+zoomBox -4701.50550 -3634.84450 3737.82750 3920.16000
+zoomBox -1546.28050 -1098.42450 1636.61050 1750.94250
+zoomBox -633.04600 -364.29500 1028.44350 1123.09300
+pan 148.30850 255.85500
+zoomBox -250.32950 -149.94050 950.09750 924.69800
+floorPlan -site core7T -s 1070 910 80 80 80 80
+setDrawView fplan
+fit
+placeInstance soc/uart_tx_inst 318 575 R0
+placeInstance soc_Bridge_Serial_out_reg

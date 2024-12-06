@@ -1,0 +1,42 @@
+@(#)$CDS: ihdl version 6.1.8-64b 06/22/2022 16:16 (sjfhw316) $  Thu Dec  5 21:54:57 2024
+
+INFO (VERILOGIN-589): Using xmvlog binary for compilation.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module ANTENNA. Therefore using library
+SC_LIB, cell ANTENNA, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module INVX8. Therefore using library
+SC_LIB, cell INVX8, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module pad_corner. Therefore using library
+PADS_LIB, cell pad_corner, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module pad_vdd. Therefore using library
+PADS_LIB, cell pad_vdd, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module pad_gnd. Therefore using library
+PADS_LIB, cell pad_gnd, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module pad_in. Therefore using library
+PADS_LIB, cell pad_in, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module pad_out. Therefore using library
+PADS_LIB, cell pad_out, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND3X1. Therefore using library
+SC_LIB, cell NAND3X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NOR2X1. Therefore using library
+SC_LIB, cell NOR2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module INVX2. Therefore using library
+SC_LIB, cell INVX2, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module OR2X1. Therefore using library
+SC_LIB, cell OR2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module NAND2X1. Therefore using library
+SC_LIB, cell NAND2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module DFFQSRX1. Therefore using library
+SC_LIB, cell DFFQSRX1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module MUX2X1. Therefore using library
+SC_LIB, cell MUX2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module AND2X1. Therefore using library
+SC_LIB, cell AND2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module XOR2X1. Therefore using library
+SC_LIB, cell XOR2X1, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module INVX4. Therefore using library
+SC_LIB, cell INVX4, and view symbol as the symbol.
+INFO (VERILOGIN-126): Unable to find the Verilog definition for module INVX1. Therefore using library
+SC_LIB, cell INVX1, and view symbol as the symbol.
+INFO (VERILOGIN-357): Checked in symbol bridge_soc_top.
+INFO (VERILOGIN-412): Checked-in connect by name schematic bridge_soc_top.
+INFO (VERILOGIN-206): End of Logfile.

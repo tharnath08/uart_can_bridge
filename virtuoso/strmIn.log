@@ -1,0 +1,58 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream In
+Program   : @(#)$CDS: strmin version 6.1.8-64b 06/22/2022 16:16 (sjfhw316) $
+          : sub-version  IC6.1.8-64b.500.26 
+Started at: 05-Dec-2024  22:28:01
+User Name : u1500738
+Host Name : lnissrv4
+Directory : /home/u1500738/Projects/uart_can_bridge/virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-75): Target library 'bridge_soc_top' is attached to the technology library 'tsmc18'. Therefore, the technology file is opened in read-only mode. All the undefined layer-purpose pairs will be dropped.
+WARNING (XSTRM-107): Existing cells in the target library will be overwritten if the cell names in the Stream file and the target library are the same. To prevent this, set the '-writeMode' option to 'noOverwrite'.
+INFO (XSTRM-217): Reading the layer map file, /research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/tsmc18/tsmc18.layermap
+INFO (XSTRM-217): Reading the refliblist file, /home/u1500738/Projects/uart_can_bridge/virtuoso/lib
+INFO (XSTRM-163): You have not used the '-viaMap' option. If a viaMap file, corresponding technology file or technology library exist, then use the '-viaMap' option for creating oaVia instances in the Streamed-In library. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options:
+	library				bridge_soc_top
+	strmFile			/home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/drcpolyfill/design_polyfill.gds
+	logFile				strmIn.log
+	topCell				sr_bridge_soc_top_polyfill
+	view				layout
+	case				Preserve
+	replaceBusBitChar		
+	layerMap			/research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/tsmc18/tsmc18.layermap
+	propSeparator			,
+	refLibList				/home/u1500738/Projects/uart_can_bridge/virtuoso/lib
+
+INFO (XSTRM-220): 1. Translating STRUCTURE tsmc_c018_sealring_corner_1p6m_polyfill as cellView bridge_soc_top/tsmc_c018_sealring_corner_1p6m_polyfill/layout.
+INFO (XSTRM-220): 2. Translating STRUCTURE tsmc_c018_seal_ring_edge_1p6m_polyfill as cellView bridge_soc_top/tsmc_c018_seal_ring_edge_1p6m_polyfill/layout.
+INFO (XSTRM-220): 3. Translating STRUCTURE DOD_1_polyfill as cellView bridge_soc_top/DOD_1_polyfill/layout.
+INFO (XSTRM-220): 4. Translating STRUCTURE DOD_2_polyfill as cellView bridge_soc_top/DOD_2_polyfill/layout.
+INFO (XSTRM-220): 5. Translating STRUCTURE DPO_1_polyfill as cellView bridge_soc_top/DPO_1_polyfill/layout.
+INFO (XSTRM-220): 6. Translating STRUCTURE DPO_2_polyfill as cellView bridge_soc_top/DPO_2_polyfill/layout.
+INFO (XSTRM-220): 7. Translating STRUCTURE pad_gnd_polyfill as cellView bridge_soc_top/pad_gnd_polyfill/layout.
+INFO (XSTRM-220): 8. Translating STRUCTURE pad_vdd_polyfill as cellView bridge_soc_top/pad_vdd_polyfill/layout.
+INFO (XSTRM-220): 9. Translating STRUCTURE bridge_soc_top_polyfill as cellView bridge_soc_top/bridge_soc_top_polyfill/layout.
+INFO (XSTRM-220): 10. Translating STRUCTURE sr_bridge_soc_top_polyfill as cellView bridge_soc_top/sr_bridge_soc_top_polyfill/layout.
+
+Summary of Objects Translated:
+	Instances:                              7747
+	CustomVias:                             0
+	StandardVias:                           0
+	CdsGenVias:                             0
+	Arrays:                                 179
+	Polygons:                               17
+	Paths:                                  0
+	PathSegs:                               0
+	Rectangles:                             1049
+	Text:                                   0
+	Node:                                   0
+	Line:                                   0
+	Cells:                                  10
+
+Elapsed Time: 1.3s   User Time: 1.0s   CPU Time: 0.1s   Peak VM: 37420KB  CPUs Used: 2
+INFO (XSTRM-234): Translation completed. '0' error(s) and '2' warning(s) found.

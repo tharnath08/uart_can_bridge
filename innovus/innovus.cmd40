@@ -1,0 +1,178 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Dec  5 21:00:17 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_design_uniquify 1
+set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+set init_mmmc_file { CONF/picosoc.view }
+set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+set init_io_file { SCRIPTS/place_io_pad.io }
+set init_pwr_net { VDD }
+set init_gnd_net { VSS }
+init_design
+saveDesign DBS/bridge_soc_top-import.enc
+setDrawView fplan
+fit
+floorPlan -site core7T -s 344 292 80 80 80 80
+setDrawView fplan
+fit
+saveDesign DBS/bridge_soc_top-fplan.enc
+globalNetConnect VDD -type pgpin -pin VDD -all -verbose
+globalNetConnect VSS -type pgpin -pin VSS -all -verbose
+globalNetConnect VDD -type tiehi
+globalNetConnect VSS -type tielo
+deleteIoFiller
+addIoFiller -cell pad_fill_32 -prefix FILLER -side n
+addIoFiller -cell pad_fill_16 -prefix FILLER -side n
+addIoFiller -cell pad_fill_8 -prefix FILLER -side n
+addIoFiller -cell pad_fill_4 -prefix FILLER -side n
+addIoFiller -cell pad_fill_2 -prefix FILLER -side n
+addIoFiller -cell pad_fill_1 -prefix FILLER -side n
+addIoFiller -cell pad_fill_01 -prefix FILLER -side n
+addIoFiller -cell pad_fill_005 -prefix FILLER -side n -fillAnyGap
+addIoFiller -cell pad_fill_32 -prefix FILLER -side s
+addIoFiller -cell pad_fill_16 -prefix FILLER -side s
+addIoFiller -cell pad_fill_8 -prefix FILLER -side s
+addIoFiller -cell pad_fill_4 -prefix FILLER -side s
+addIoFiller -cell pad_fill_2 -prefix FILLER -side s
+addIoFiller -cell pad_fill_1 -prefix FILLER -side s
+addIoFiller -cell pad_fill_01 -prefix FILLER -side s
+addIoFiller -cell pad_fill_005 -prefix FILLER -side s -fillAnyGap
+addIoFiller -cell pad_fill_32 -prefix FILLER -side e
+addIoFiller -cell pad_fill_16 -prefix FILLER -side e
+addIoFiller -cell pad_fill_8 -prefix FILLER -side e
+addIoFiller -cell pad_fill_4 -prefix FILLER -side e
+addIoFiller -cell pad_fill_2 -prefix FILLER -side e
+addIoFiller -cell pad_fill_1 -prefix FILLER -side e
+addIoFiller -cell pad_fill_01 -prefix FILLER -side e
+addIoFiller -cell pad_fill_005 -prefix FILLER -side e -fillAnyGap
+addIoFiller -cell pad_fill_32 -prefix FILLER -side w
+addIoFiller -cell pad_fill_16 -prefix FILLER -side w
+addIoFiller -cell pad_fill_8 -prefix FILLER -side w
+addIoFiller -cell pad_fill_4 -prefix FILLER -side w
+addIoFiller -cell pad_fill_2 -prefix FILLER -side w
+addIoFiller -cell pad_fill_1 -prefix FILLER -side w
+addIoFiller -cell pad_fill_01 -prefix FILLER -side w
+addIoFiller -cell pad_fill_005 -prefix FILLER -side w -fillAnyGap
+addRing -type core_rings -follow core -nets {VDD VDD VSS VSS} -center 1 -width {top 10 bottom 10 left 10 right 10} -spacing {top 4 bottom 4 left 4 right 4} -center 1 -layer {top METAL5 bottom METAL5 left METAL6 right METAL6} -use_wire_group 1 -extend_corner {} -jog_distance 0 -snap_wire_center_to_grid None -threshold 0
+addStripe -nets {VDD VSS} -layer METAL6 -direction vertical -width 5 -spacing 5 -number_of_sets 10 -start_from left -start_offset 25 -stop_offset 30 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit METAL6 -padcore_ring_bottom_layer_limit METAL1 -block_ring_top_layer_limit METAL6 -block_ring_bottom_layer_limit METAL1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addStripe -nets {VDD VSS} -layer METAL5 -direction horizontal -width 5 -spacing 5 -number_of_sets 9 -start_from left -start_offset 30 -stop_offset 30 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit METAL6 -padcore_ring_bottom_layer_limit METAL1 -block_ring_top_layer_limit METAL6 -block_ring_bottom_layer_limit METAL1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+saveDesign DBS/bridge_soc_top-power.enc
+sroute -connect { blockPin corePin padPin floatingStripe} -layerChangeRange { METAL1(1) METAL6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPintarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -crossoverViaLayerRange { METAL1(1) METAL6(6) } -nets { VDD VSS } -allowJogging 1 -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { METAL1(1) METAL6(6)}
+fit
+saveDesign DBS/bridge_soc_top-power-routed.enc
+setMultiCpuUsage -localCpu 2 -keepLicense true -acquireLicense 2
+setDesignMode -process 180
+setDesignMode -topRoutingLayer 4
+setPlaceMode -timingDriven true -congEffort high -placeIOPins 1 -place_global_max_density 0.45
+place_design
+setDrawView place
+checkPlace ./RPT/place.rpt
+saveDesign DBS/bridge_soc_top-placed.enc
+setMultiCpuUsage -localCpu 2 -keepLicense true -acquireLicense 2
+set_ccopt_property route_type_override_preferred_routing_layer_effort none
+setDesignMode -topRoutingLayer 4
+setDesignMode -bottomRoutingLayer 2
+create_route_type -name clkroute -top_preferred_layer 4
+set_ccopt_property route_type clkroute -net_type trunk
+set_ccopt_property route_type clkroute -net_type leaf
+set_ccopt_property buffer_cells BUFX1
+set_ccopt_property inverter_cells {INVX1 INVX2 INVX4 INVX8 INVX16 INVX32}
+create_ccopt_clock_tree_spec -file ccopt.spec
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property sink_type -pin clk_pad/pad ignore
+set_ccopt_property sink_type_reasons -pin clk_pad/pad no_sdc_clock
+set_ccopt_property cts_is_sdc_clock_root -pin clock true
+create_ccopt_clock_tree -name clock -source clock -no_skew_group
+set_ccopt_property clock_period -pin clock 2
+set_ccopt_property timing_connectivity_info {}
+create_ccopt_skew_group -name clock/constraint -sources clock -auto_sinks
+set_ccopt_property include_source_latency -skew_group clock/constraint true
+set_ccopt_property extracted_from_clock_name -skew_group clock/constraint clock
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clock/constraint constraint
+set_ccopt_property extracted_from_delay_corners -skew_group clock/constraint {wc bc}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design -cts
+saveDesign DBS/bridge_soc_top-cts.enc
+setMultiCpuUsage -localCpu 2 -keepLicense true -acquireLicense 2
+setDesignMode -topRoutingLayer 4
+setNanoRouteMode -routeWithTimingDriven true -routeTdrEffort 5 -routeWithSiDriven true -drouteFixAntenna true -routeInsertAntennaDiode true -routeAntennaCellName ANTENNA -routeInsertDiodeForClockNets true
+routeDesign -globalDetail -wireOpt -viaOpt
+saveDesign DBS/bridge_soc_top-routed.enc
+addFiller -cell {FILL32 FILL16 FILL8 FILL4 FILL2 FILL1} -prefix FILLER
+setDrawView place
+saveDesign DBS/bridge_soc_top-filled.enc
+verifyConnectivity -type all -report ./RPT/connectivity.rpt
+set_verify_drc_mode -check_only regular
+verify_drc -report ./RPT/geometry.rpt
+verifyProcessAntenna -report ./RPT/antenna.rpt
+verifyProcessAntenna -report ./RPT/antenna.rpt
+reportNetStat > ./RPT/netlist_stats_final.rpt
+report_area > ./RPT/area_final.rpt
+report_timing > ${rpt_dir}/timing_final.rpt
+summaryReport -noHtml -outfile ./RPT/summary_report.rpt
+saveNetlist -includePowerGround -excludeLeafCell ./HDL/PLACED/bridge_soc_top_placed_virtuoso.v
+saveNetlist -excludeLeafCell ../HDL/PLACED/bridge_soc_top_placed_modelsim.v
+write_sdf SDF/${design}_placed.sdf
+streamOut GDS/bridge_soc_top.gds -mapFile /research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/captable/gds2.map -libName DesignLib -structureName bridge_soc_top -units 2000 -mode ALL
+zoomBox -7.17700 27.87450 951.95700 886.50400
+zoomBox 113.95650 144.69900 702.98550 672.00550
+zoomBox 178.45000 197.56250 604.02400 578.54200
+zoomBox 198.68250 214.73950 560.42050 538.57200
+zoomBox 261.70400 259.88350 483.85650 458.75750
+zoomBox 278.77450 271.13500 467.60450 440.17800
+zoomBox 316.10250 295.73650 432.06800 399.55050
+zoomBox 338.27400 312.75600 409.49100 376.51050
+zoomBox 346.94100 318.07350 398.39550 364.13650
+zoomBox 354.38500 320.43800 391.56100 353.71850
+zoomBox 359.73850 322.17700 386.59850 346.22250
+zoomBox 363.40200 323.61350 382.80900 340.98700
+zoomBox 359.73800 322.17650 386.59850 346.22250
+zoomBox 357.40800 321.26300 389.00850 349.55200
+zoomBox 351.44150 318.92350 395.17900 358.07800
+zoomBox 347.64700 317.43600 399.10300 363.50000
+zoomBox 331.75300 311.20400 415.54050 386.21150
+zoomBox 324.48450 308.35350 423.05800 396.59800
+zoomBox 315.93300 305.00050 431.90200 408.81750
+zoomBox 302.68000 296.99050 463.19100 440.68200
+zoomBox 284.33600 285.90450 506.49700 484.78600
+zoomBox 268.30900 281.79600 529.67500 515.77450
+zoomBox 210.77850 263.48500 572.53100 587.33050
+zoomBox 174.19300 251.84000 599.78400 632.83500
+zoomBox 240.95900 273.68800 548.44900 548.95700
+zoomBox 267.03400 282.22000 528.40050 516.19900
+zoomBox 308.22450 296.15000 497.06150 465.19950
+zoomBox 337.98450 306.25050 474.41950 428.38900
+zoomBox 362.91150 319.93950 446.70000 394.94800
+zoomBox 378.39600 326.59400 429.85300 372.65900
+zoomBox 382.10050 328.15150 425.83900 367.30700
+zoomBox 390.20100 331.55100 417.06200 355.59750
+zoomBox 393.78800 333.04550 413.19550 350.41950
+zoomBox 395.06850 333.71200 411.56500 348.48000
+zoomBox 396.95750 334.81350 408.87600 345.48300
+zoomBox 386.82650 329.05150 413.68950 353.09950
+zoomBox 356.75300 311.94800 427.98000 375.71150
+reportNetStat > ./RPT/netlist_stats_final.rpt
+report_area > ./RPT/area_final.rpt
+report_timing > ${rpt_dir}/timing_final.rpt
+summaryReport -noHtml -outfile ./RPT/summary_report.rpt
+saveNetlist -includePowerGround -excludeLeafCell ./HDL/PLACED/bridge_soc_top_placed_virtuoso.v
+saveNetlist -excludeLeafCell ../HDL/PLACED/bridge_soc_top_placed_modelsim.v
+write_sdf SDF/${design}_placed.sdf
+streamOut GDS/bridge_soc_top.gds -mapFile /research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/captable/gds2.map -libName DesignLib -structureName bridge_soc_top -units 2000 -mode ALL

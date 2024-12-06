@@ -1,0 +1,45 @@
+bridge_soc_top 1000
+mnpg
+0 0 2 Dec  5 22:40:31 2024                                                      
+Rule File Pathname: /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/_calibre.lvs_
+MOS connected to both power and ground
+mppg
+3 3 2 Dec  5 22:40:31 2024                                                      
+Rule File Pathname: /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/_calibre.lvs_
+MOS connected to both power and ground
+p 1 4
+CN bridge_soc_top c 1 0 0 1 0 0 0
+573210 486570
+573390 486570
+573390 487010
+573210 487010
+p 2 4
+573930 486570
+574110 486570
+574110 487010
+573930 487010
+p 3 4
+574650 486570
+574830 486570
+574830 487010
+574650 487010
+floating
+0 0 2 Dec  5 22:40:31 2024                                                      
+Rule File Pathname: /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/_calibre.lvs_
+Please check the floating gate
+floating.nxwell_float
+0 0 2 Dec  5 22:40:31 2024                                                      
+Rule File Pathname: /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/_calibre.lvs_
+Floating nxwell_float is not allowed
+floating.psub
+0 0 2 Dec  5 22:40:31 2024                                                      
+Rule File Pathname: /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/_calibre.lvs_
+Floating psub is not allowed
+npvss49
+0 0 2 Dec  5 22:40:31 2024                                                      
+Rule File Pathname: /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/_calibre.lvs_
+ntap connected to GROUND
+ppvdd49
+0 0 2 Dec  5 22:40:31 2024                                                      
+Rule File Pathname: /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/_calibre.lvs_
+ptap connected to POWER

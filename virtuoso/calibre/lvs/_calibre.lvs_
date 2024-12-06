@@ -1,0 +1,76 @@
+//
+//  Rule file generated on Thu Dec 05 22:40:27 MST 2024
+//     by Calibre Interactive - LVS (v2021.2_37.20)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH  "bridge_soc_top.calibre.db"
+LAYOUT PRIMARY "bridge_soc_top"
+LAYOUT SYSTEM GDSII
+
+SOURCE PATH "/home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/bridge_soc_top.sp"
+SOURCE PRIMARY "bridge_soc_top"
+SOURCE SYSTEM SPICE
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "bridge_soc_top.lvs.report"
+
+LVS REPORT OPTION NONE
+LVS FILTER UNUSED OPTION NONE SOURCE
+LVS FILTER UNUSED OPTION NONE LAYOUT
+LVS REPORT MAXIMUM 50
+LVS POWER NAME
+	"vdd"
+	"vdd!"
+	"vcc"
+	"vcc!"
+	"VCC"
+	"VCC!"
+	"VDD"
+	"VDD!"
+
+LVS GROUND NAME
+	"gnd"
+	"gnd!"
+	"vss"
+	"vss!"
+	"GND"
+	"GND!"
+	"VSS"
+	"VSS!"
+
+
+LVS RECOGNIZE GATES ALL
+
+
+LVS ABORT ON SOFTCHK NO
+LVS ABORT ON SUPPLY ERROR YES
+LVS IGNORE PORTS NO
+LVS SHOW SEED PROMOTIONS NO
+LVS SHOW SEED PROMOTIONS MAXIMUM 50
+
+LVS ISOLATE SHORTS NO
+
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+LVS EXECUTE ERC YES
+ERC RESULTS DATABASE "bridge_soc_top.erc.results"
+ERC SUMMARY REPORT "bridge_soc_top.erc.summary" REPLACE HIER
+ERC CELL NAME YES CELL SPACE XFORM
+ERC MAXIMUM RESULTS 1000
+ERC MAXIMUM VERTEX 4096
+
+DRC ICSTATION YES
+
+
+SOURCE CASE YES
+LAYOUT CASE YES
+
+
+INCLUDE "/research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/Calibre/lvs/calibre.lvs"
+

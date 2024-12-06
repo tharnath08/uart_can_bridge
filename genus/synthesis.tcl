@@ -11,7 +11,7 @@ puts "Hostname : [info hostname]"
 ## Preset global variables and attributes
 ##############################################################################
 
-set DESIGN uart_can_bridge
+set DESIGN bridge_soc_top
 set GEN_EFF medium
 set MAP_OPT_EFF high
 set DATE [clock format [clock seconds] -format "%b%d-%T"] 
@@ -54,7 +54,7 @@ set_db / .lp_insert_clock_gating false
 ####################################################################
 
 
-read_hdl { /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v \  /home/u1500738/Projects/uart_can_bridge/genus/RTL/can_rx.v \ /home/u1500738/Projects/uart_can_bridge/genus/RTL/can_tx.v \ /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_rx.v \ /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_tx.v}
+read_hdl { /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v   /home/u1500738/Projects/uart_can_bridge/genus/RTL/can_rx.v  /home/u1500738/Projects/uart_can_bridge/genus/RTL/can_tx.v  /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_rx.v  /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_tx.v}
 elaborate $DESIGN
 puts "Runtime & Memory after 'read_hdl'"
 time_info Elaboration

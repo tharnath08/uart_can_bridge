@@ -1,0 +1,141 @@
+# //  Questa Sim-64
+# //  Version 2019.4 linux_x86_64 Oct 15 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project uart_can_bridge_rtl
+# Compile of can_tx.v was successful with warnings.
+# Compile of can_tx_tb.v was successful.
+# Compile of uart_tx.v was successful with warnings.
+# Compile of uart_tx_tb.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_rx_tb.v was successful.
+# Compile of can_rx.v was successful.
+# Compile of can_rx_tb.v was successful.
+# Compile of uart_can_bridge.v was successful.
+# Compile of uart_can_bridge_tb.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of can_tx.v was successful with warnings.
+# Compile of can_tx_tb.v was successful.
+# Compile of uart_tx.v was successful with warnings.
+# Compile of uart_tx_tb.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_rx_tb.v was successful.
+# Compile of can_rx.v was successful.
+# Compile of can_rx_tb.v was successful.
+# Compile of uart_can_bridge_tb.v was successful.
+# Compile of uart_can_bridge.v failed with 1 errors.
+# 10 compiles, 1 failed with 1 error.
+# Compile of can_tx.v was successful with warnings.
+# Compile of can_tx_tb.v was successful.
+# Compile of uart_tx.v was successful with warnings.
+# Compile of uart_tx_tb.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_rx_tb.v was successful.
+# Compile of can_rx.v was successful.
+# Compile of can_rx_tb.v was successful.
+# Compile of uart_can_bridge_tb.v was successful.
+# Compile of uart_can_bridge.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim uart_can_bridge_rtl.tb_can_to_uart
+# vsim uart_can_bridge_rtl.tb_can_to_uart 
+# Start time: 20:14:42 on Dec 03,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(38): (vopt-2685) [TFMPC] - Too few port connections for 'uart_rx_inst'.  Expected 7, found 6.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(38): (vopt-2718) [TFMPC] - Missing connection for port 'statev'.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(48): (vopt-2685) [TFMPC] - Too few port connections for 'can_tx_inst'.  Expected 9, found 8.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'statev'.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(60): (vopt-2685) [TFMPC] - Too few port connections for 'can_rx_inst'.  Expected 7, found 6.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(60): (vopt-2718) [TFMPC] - Missing connection for port 'statev'.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/RTL/can_tx.v(70): (vopt-2182) 'status_reg' might be read before written in always_comb or always @* block.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/RTL/uart_tx.v(64): (vopt-2182) 'Status_reg' might be read before written in always_comb or always @* block.
+# Loading work.tb_can_to_uart(fast)
+add wave -position insertpoint sim:/tb_can_to_uart/*
+# (vish-4014) No objects found matching '/tb_can_to_uart/*'.
+# Error opening /home/u1500738/Projects/uart_can_bridge/RTL/can_to_uart_tb.v
+# Path name '/home/u1500738/Projects/uart_can_bridge/RTL/can_to_uart_tb.v' doesn't exist.
+vsim uart_can_bridge_rtl.tb_uart_can_bridge -voptargs=+acc
+# End time: 20:15:30 on Dec 03,2024, Elapsed time: 0:00:48
+# Errors: 2, Warnings: 8
+# vsim uart_can_bridge_rtl.tb_uart_can_bridge -voptargs="+acc" 
+# Start time: 20:15:30 on Dec 03,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(38): (vopt-2685) [TFMPC] - Too few port connections for 'uart_rx_inst'.  Expected 7, found 6.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(38): (vopt-2718) [TFMPC] - Missing connection for port 'statev'.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(48): (vopt-2685) [TFMPC] - Too few port connections for 'can_tx_inst'.  Expected 9, found 8.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(48): (vopt-2718) [TFMPC] - Missing connection for port 'statev'.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(60): (vopt-2685) [TFMPC] - Too few port connections for 'can_rx_inst'.  Expected 7, found 6.
+# ** Warning: /home/u1500738/Projects/uart_can_bridge/genus/RTL/uart_can_bridge.v(60): (vopt-2718) [TFMPC] - Missing connection for port 'statev'.
+# Loading work.tb_uart_can_bridge(fast)
+# Loading work.uart_can_bridge(fast)
+# Loading work.uart_rx(fast)
+# Loading work.can_tx(fast)
+# Loading work.can_rx(fast)
+# Loading work.uart_tx(fast)
+add wave -position insertpoint sim:/tb_uart_can_bridge/*
+run
+run
+vsim uart_can_bridge_rtl.tb_uart_can_bridge -voptargs=+acc
+# End time: 20:20:32 on Dec 03,2024, Elapsed time: 0:05:02
+# Errors: 2, Warnings: 6
+# vsim uart_can_bridge_rtl.tb_uart_can_bridge -voptargs="+acc" 
+# Start time: 20:20:32 on Dec 03,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_uart_can_bridge(fast)
+# Loading work.uart_can_bridge(fast)
+# Loading work.uart_rx(fast)
+# Loading work.can_tx(fast)
+# Loading work.can_rx(fast)
+# Loading work.uart_tx(fast)
+add wave -position insertpoint sim:/tb_uart_can_bridge/*
+run
+run
+run
+run
+# Compile of can_tx.v was successful with warnings.
+# Compile of can_tx_tb.v was successful.
+# Compile of uart_tx.v was successful with warnings.
+# Compile of uart_tx_tb.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_rx_tb.v was successful.
+# Compile of can_rx.v was successful.
+# Compile of can_rx_tb.v was successful.
+# Compile of uart_can_bridge_tb.v was successful.
+# Compile of bridge_soc_top_m.v was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of can_tx.v was successful with warnings.
+# Compile of can_tx_tb.v was successful.
+# Compile of uart_tx.v was successful with warnings.
+# Compile of uart_tx_tb.v was successful.
+# Compile of uart_rx.v was successful.
+# Compile of uart_rx_tb.v was successful.
+# Compile of can_rx.v was successful.
+# Compile of can_rx_tb.v was successful.
+# Compile of uart_can_bridge_tb.v was successful.
+# Compile of bridge_soc_top_m.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim uart_can_bridge_rtl.tb_uart_can_bridge -voptargs=+acc
+# End time: 20:22:44 on Dec 03,2024, Elapsed time: 0:02:12
+# Errors: 4, Warnings: 0
+# vsim uart_can_bridge_rtl.tb_uart_can_bridge -voptargs="+acc" 
+# Start time: 20:22:44 on Dec 03,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_uart_can_bridge(fast)
+# Loading work.uart_can_bridge(fast)
+# Loading work.uart_rx(fast)
+# Loading work.can_tx(fast)
+# Loading work.can_rx(fast)
+# Loading work.uart_tx(fast)
+add wave -position insertpoint sim:/tb_uart_can_bridge/*
+run
+# End time: 20:23:32 on Dec 03,2024, Elapsed time: 0:00:48
+# Errors: 3, Warnings: 0

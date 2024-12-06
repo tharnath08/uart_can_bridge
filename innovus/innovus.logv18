@@ -1,0 +1,587 @@
+[12/03 19:48:03      0s] 
+[12/03 19:48:03      0s] Cadence Innovus(TM) Implementation System.
+[12/03 19:48:03      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/03 19:48:03      0s] 
+[12/03 19:48:03      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[12/03 19:48:03      0s] Options:	
+[12/03 19:48:03      0s] Date:		Tue Dec  3 19:48:03 2024
+[12/03 19:48:03      0s] Host:		lnissrv4 (x86_64 w/Linux 4.18.0-553.5.1.el8_10.x86_64) (16cores*64cpus*Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz 22528KB)
+[12/03 19:48:03      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[12/03 19:48:03      0s] 
+[12/03 19:48:03      0s] License:
+[12/03 19:48:03      0s] 		[19:48:03.041418] Configured Lic search path (21.01-s002): /uusoc/facility/cad_tools/Cadence/common_license:/uusoc/facility/cad_tools/Mentor/common_license
+
+[12/03 19:48:03      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[12/03 19:48:03      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[12/03 19:48:18     12s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[12/03 19:48:22     15s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[12/03 19:48:22     15s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[12/03 19:48:22     15s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[12/03 19:48:22     15s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[12/03 19:48:22     15s] @(#)CDS: CPE v21.15-s076
+[12/03 19:48:22     15s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[12/03 19:48:22     15s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[12/03 19:48:22     15s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[12/03 19:48:22     15s] @(#)CDS: RCDB 11.15.0
+[12/03 19:48:22     15s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[12/03 19:48:22     15s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[12/03 19:48:22     15s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1468031_lnissrv4_u1500738_N5FdJz.
+
+[12/03 19:48:22     15s] Change the soft stacksize limit to 0.2%RAM (1029 mbytes). Set global soft_stack_size_limit to change the value.
+[12/03 19:48:24     17s] 
+[12/03 19:48:24     17s] **INFO:  MMMC transition support version v31-84 
+[12/03 19:48:24     17s] 
+[12/03 19:48:24     17s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/03 19:48:24     17s] <CMD> suppressMessage ENCEXT-2799
+[12/03 19:48:24     17s] <CMD> win
+[12/03 19:48:36     18s] <CMD> set init_design_uniquify 1
+[12/03 19:48:47     19s] <CMD> set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+[12/03 19:48:47     19s] <CMD> set init_mmmc_file { CONF/picosoc.view }
+[12/03 19:48:47     19s] <CMD> set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+[12/03 19:48:47     19s] <CMD> set init_io_file { SCRIPTS/place_io_pad.io }
+[12/03 19:48:47     19s] <CMD> set init_pwr_net { VDD }
+[12/03 19:48:47     19s] <CMD> set init_gnd_net { VSS }
+[12/03 19:48:47     19s] <CMD> init_design
+[12/03 19:48:48     19s] #% Begin Load MMMC data ... (date=12/03 19:48:47, mem=991.6M)
+[12/03 19:48:48     19s] #% End Load MMMC data ... (date=12/03 19:48:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=992.7M, current mem=992.7M)
+[12/03 19:48:48     19s] 
+[12/03 19:48:48     19s] Loading LEF file /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef ...
+[12/03 19:48:48     19s] 
+[12/03 19:48:48     19s] Loading LEF file /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef ...
+[12/03 19:48:48     19s] Set DBUPerIGU to M2 pitch 1120.
+[12/03 19:48:48     19s] 
+[12/03 19:48:48     19s] Loading LEF file /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef ...
+[12/03 19:48:48     19s] 
+[12/03 19:48:48     19s] Loading LEF file /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef ...
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'AND2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'ANTENNA' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'BUFX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'DFFQBX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'DFFQQBX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'DFFQSRX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'DFFQX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'FILL1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'FILL16' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'FILL2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'FILL32' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'FILL4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'FILL8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'INVX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'INVX16' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'INVX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'INVX32' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'INVX4' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'INVX8' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (IMPLF-58):	MACRO 'MUX2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/03 19:48:48     19s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     19s] Type 'man IMPLF-58' for more detail.
+[12/03 19:48:48     19s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[12/03 19:48:48     19s] To increase the message display limit, refer to the product command reference manual.
+[12/03 19:48:48     19s] 
+[12/03 19:48:48     19s] Loading LEF file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef ...
+[12/03 19:48:48     20s] WARNING (LEFPARS-2003): BUSBITCHARS is a required statement in LEF files with version 5.5 and earlier.
+[12/03 19:48:48     20s] Without BUSBITCHARS defined, the LEF file is technically incorrect.
+[12/03 19:48:48     20s] Refer to the LEF/DEF 5.5 or earlier Language Reference manual on how to define this statement. See file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef at line 5084.
+[12/03 19:48:48     20s] WARNING (LEFPARS-2004): DIVIDERCHAR is a required statement in LEF files with version 5.5 and earlier.
+[12/03 19:48:48     20s] Without DIVIDECHAR defined, the LEF file is technically incorrect.
+[12/03 19:48:48     20s] Refer to the LEF/DEF 5.5 or earlier Language Reference manual on how to define this statement. See file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef at line 5084.
+[12/03 19:48:48     20s] 
+[12/03 19:48:48     20s] Loading LEF file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef ...
+[12/03 19:48:48     20s] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef at line 135.
+[12/03 19:48:48     20s] 
+[12/03 19:48:48     20s] Loading LEF file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef ...
+[12/03 19:48:48     20s] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[12/03 19:48:48     20s] The LEF parser will ignore this statement.
+[12/03 19:48:48     20s] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef at line 12.
+[12/03 19:48:48     20s] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef at line 2241.
+[12/03 19:48:48     20s] 
+[12/03 19:48:48     20s] Loading LEF file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef ...
+[12/03 19:48:48     20s] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef at line 141.
+[12/03 19:48:48     20s] **WARN: (IMPLF-61):	29 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[12/03 19:48:48     20s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/03 19:48:48     20s] Type 'man IMPLF-61' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[0]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[10]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[11]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[12]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[13]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[14]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[15]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[16]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[17]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[18]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[19]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[1]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[20]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[21]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[22]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[23]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[24]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[25]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[26]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-201):	Pin 'QA[27]' in macro 'RF2SH' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-201' for more detail.
+[12/03 19:48:48     20s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[12/03 19:48:48     20s] To increase the message display limit, refer to the product command reference manual.
+[12/03 19:48:48     20s] **WARN: (IMPLF-200):	Pin 'DataOut' in macro 'pad_out' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-200' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'pad_out' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-200' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'pad_in' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-200' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-200):	Pin 'DataOut' in macro 'pad_bidirhe' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-200' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-200):	Pin 'EN' in macro 'pad_bidirhe' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-200' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-200):	Pin 'pad' in macro 'pad_bidirhe' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-200' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/03 19:48:48     20s] Type 'man IMPLF-200' for more detail.
+[12/03 19:48:48     20s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[12/03 19:48:48     20s] Loading view definition file from CONF/picosoc.view
+[12/03 19:48:48     20s] Reading wc timing library '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/sclib_tsmc180_ss_nldm.lib' ...
+[12/03 19:48:48     20s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/sclib_tsmc180_ss_nldm.lib)
+[12/03 19:48:48     20s] Read 21 cells in library 'sclib_tsmc180_ss' 
+[12/03 19:48:48     20s] Reading wc timing library '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/padlib_tsmc180_ss_nldm.lib' ...
+[12/03 19:48:48     20s] **WARN: (TECHLIB-302):	No function defined for cell 'pad_vdd'. The cell will only be used for analysis. (File /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/padlib_tsmc180_ss_nldm.lib)
+[12/03 19:48:48     20s] **WARN: (TECHLIB-302):	No function defined for cell 'pad_gnd'. The cell will only be used for analysis. (File /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/padlib_tsmc180_ss_nldm.lib)
+[12/03 19:48:48     20s] **WARN: (TECHLIB-302):	No function defined for cell 'pad_ana'. The cell will only be used for analysis. (File /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/padlib_tsmc180_ss_nldm.lib)
+[12/03 19:48:48     20s] Read 6 cells in library 'padlib_tsmc180_ss' 
+[12/03 19:48:48     20s] Reading wc timing library '/research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_fast@0C_syn.lib' ...
+[12/03 19:48:48     20s] Read 1 cells in library 'USERLIB' 
+[12/03 19:48:48     20s] Reading wc timing library '/research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_fast@0C_syn.lib' ...
+[12/03 19:48:48     20s] **WARN: (TECHLIB-459):	Appending library 'USERLIB' to the previously read library of the same name and nominal PVT. Cell definitions from the previously read library will not be overridden. (File /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_fast@0C_syn.lib)
+[12/03 19:48:48     20s] Read 1 cells in library 'USERLIB' 
+[12/03 19:48:48     20s] Reading bc timing library '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/sclib_tsmc180_ff_nldm.lib' ...
+[12/03 19:48:48     20s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/sclib_tsmc180_ff_nldm.lib)
+[12/03 19:48:48     20s] Read 21 cells in library 'sclib_tsmc180_ff' 
+[12/03 19:48:48     20s] Reading bc timing library '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/padlib_tsmc180_ff_nldm.lib' ...
+[12/03 19:48:48     20s] **WARN: (TECHLIB-302):	No function defined for cell 'pad_vdd'. The cell will only be used for analysis. (File /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/padlib_tsmc180_ff_nldm.lib)
+[12/03 19:48:48     20s] **WARN: (TECHLIB-302):	No function defined for cell 'pad_gnd'. The cell will only be used for analysis. (File /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/padlib_tsmc180_ff_nldm.lib)
+[12/03 19:48:48     20s] **WARN: (TECHLIB-302):	No function defined for cell 'pad_ana'. The cell will only be used for analysis. (File /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lib/padlib_tsmc180_ff_nldm.lib)
+[12/03 19:48:48     20s] Read 6 cells in library 'padlib_tsmc180_ff' 
+[12/03 19:48:48     20s] Ending "PreSetAnalysisView" (total cpu=0:00:00.2, real=0:00:00.0, peak res=1039.7M, current mem=1007.9M)
+[12/03 19:48:48     20s] *** End library_loading (cpu=0.00min, real=0.00min, mem=26.5M, fe_cpu=0.34min, fe_real=0.75min, fe_mem=1079.8M) ***
+[12/03 19:48:48     20s] #% Begin Load netlist data ... (date=12/03 19:48:48, mem=1007.9M)
+[12/03 19:48:48     20s] *** Begin netlist parsing (mem=1079.8M) ***
+[12/03 19:48:48     20s] Pin 'pad' of cell 'pad_ana' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+[12/03 19:48:48     20s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'RA1SHD_RD' is defined in LEF but not in the timing library.
+[12/03 19:48:48     20s] Type 'man IMPVL-159' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'RA1SHD_RD' is defined in LEF but not in the timing library.
+[12/03 19:48:48     20s] Type 'man IMPVL-159' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPVL-159):	Pin 'VDD' of cell 'RF2SH' is defined in LEF but not in the timing library.
+[12/03 19:48:48     20s] Type 'man IMPVL-159' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPVL-159):	Pin 'VSS' of cell 'RF2SH' is defined in LEF but not in the timing library.
+[12/03 19:48:48     20s] Type 'man IMPVL-159' for more detail.
+[12/03 19:48:48     20s] Created 29 new cells from 5 timing libraries.
+[12/03 19:48:48     20s] Reading netlist ...
+[12/03 19:48:48     20s] Backslashed names will retain backslash and a trailing blank character.
+[12/03 19:48:48     20s] Reading verilog netlist 'HDL/GATE/bridge_soc_top_m.v'
+[12/03 19:48:48     20s] 
+[12/03 19:48:48     20s] *** Memory Usage v#1 (Current mem = 1080.836M, initial mem = 483.887M) ***
+[12/03 19:48:48     20s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1080.8M) ***
+[12/03 19:48:48     20s] #% End Load netlist data ... (date=12/03 19:48:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1013.3M, current mem=1013.3M)
+[12/03 19:48:48     20s] Top level cell is bridge_soc_top.
+[12/03 19:48:48     20s] Hooked 56 DB cells to tlib cells.
+[12/03 19:48:48     20s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1017.7M, current mem=1017.7M)
+[12/03 19:48:48     20s] Starting recursive module instantiation check.
+[12/03 19:48:48     20s] No recursion found.
+[12/03 19:48:48     20s] Building hierarchical netlist for Cell bridge_soc_top ...
+[12/03 19:48:48     20s] *** Netlist is unique.
+[12/03 19:48:48     20s] Setting Std. cell height to 7840 DBU (smallest netlist inst).
+[12/03 19:48:48     20s] ** info: there are 72 modules.
+[12/03 19:48:48     20s] ** info: there are 976 stdCell insts.
+[12/03 19:48:48     20s] ** info: there are 14 Pad insts.
+[12/03 19:48:48     20s] 
+[12/03 19:48:48     20s] *** Memory Usage v#1 (Current mem = 1135.250M, initial mem = 483.887M) ***
+[12/03 19:48:48     20s] Reading IO assignment file "SCRIPTS/place_io_pad.io" ...
+[12/03 19:48:48     20s] Adjusting Core to Left to: 0.3200. Core to Bottom to: 0.3200.
+[12/03 19:48:48     20s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/03 19:48:48     20s] Type 'man IMPFP-3961' for more detail.
+[12/03 19:48:48     20s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/03 19:48:48     20s] Type 'man IMPFP-3961' for more detail.
+[12/03 19:48:48     20s] Start create_tracks
+[12/03 19:48:48     20s] Generated pitch 1.12 in METAL6 is different from 0.9 defined in technology file in preferred direction.
+[12/03 19:48:48     20s] Extraction setup Started 
+[12/03 19:48:48     20s] 
+[12/03 19:48:48     20s] Trim Metal Layers:
+[12/03 19:48:48     20s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[12/03 19:48:48     20s] Reading Capacitance Table File /research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/captable/t018lo_1p6m_typical.captable ...
+[12/03 19:48:48     20s] Reading Capacitance Table File /research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/captable/t018lo_1p6m_typical.captable ...
+[12/03 19:48:48     20s] Importing multi-corner RC tables ... 
+[12/03 19:48:48     20s] Summary of Active RC-Corners : 
+[12/03 19:48:48     20s]  
+[12/03 19:48:48     20s]  Analysis View: wc
+[12/03 19:48:48     20s]     RC-Corner Name        : wc
+[12/03 19:48:48     20s]     RC-Corner Index       : 0
+[12/03 19:48:48     20s]     RC-Corner Temperature : 25 Celsius
+[12/03 19:48:48     20s]     RC-Corner Cap Table   : '/research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/captable/t018lo_1p6m_typical.captable'
+[12/03 19:48:48     20s]     RC-Corner PreRoute Res Factor         : 1
+[12/03 19:48:48     20s]     RC-Corner PreRoute Cap Factor         : 1
+[12/03 19:48:48     20s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/03 19:48:48     20s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/03 19:48:48     20s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/03 19:48:48     20s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[12/03 19:48:48     20s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[12/03 19:48:48     20s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/03 19:48:48     20s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/03 19:48:48     20s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[12/03 19:48:48     20s]  
+[12/03 19:48:48     20s]  Analysis View: bc
+[12/03 19:48:48     20s]     RC-Corner Name        : bc
+[12/03 19:48:48     20s]     RC-Corner Index       : 1
+[12/03 19:48:48     20s]     RC-Corner Temperature : 25 Celsius
+[12/03 19:48:48     20s]     RC-Corner Cap Table   : '/research/ece/lnis-teaching/Designkits/tsmc180nm/pdk/captable/t018lo_1p6m_typical.captable'
+[12/03 19:48:48     20s]     RC-Corner PreRoute Res Factor         : 1
+[12/03 19:48:48     20s]     RC-Corner PreRoute Cap Factor         : 1
+[12/03 19:48:48     20s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/03 19:48:48     20s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/03 19:48:48     20s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/03 19:48:48     20s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[12/03 19:48:48     20s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[12/03 19:48:48     20s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/03 19:48:48     20s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/03 19:48:48     20s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[12/03 19:48:48     20s] 
+[12/03 19:48:48     20s] Trim Metal Layers:
+[12/03 19:48:48     20s] LayerId::1 widthSet size::4
+[12/03 19:48:48     20s] LayerId::2 widthSet size::4
+[12/03 19:48:48     20s] LayerId::3 widthSet size::4
+[12/03 19:48:48     20s] LayerId::4 widthSet size::4
+[12/03 19:48:48     20s] LayerId::5 widthSet size::4
+[12/03 19:48:48     20s] LayerId::6 widthSet size::3
+[12/03 19:48:48     20s] Updating RC grid for preRoute extraction ...
+[12/03 19:48:48     20s] eee: pegSigSF::1.070000
+[12/03 19:48:48     20s] Initializing multi-corner capacitance tables ... 
+[12/03 19:48:48     20s] Initializing multi-corner resistance tables ...
+[12/03 19:48:48     20s] eee: l::1 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/03 19:48:48     20s] eee: l::2 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/03 19:48:48     20s] eee: l::3 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/03 19:48:48     20s] eee: l::4 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/03 19:48:48     20s] eee: l::5 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/03 19:48:48     20s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/03 19:48:48     20s] {RT wc 0 6 6 {5 0} 1}
+[12/03 19:48:48     20s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.000000 uaWl=0.000000 uaWlH=0.000000 aWlH=0.000000 lMod=0 pMax=0.850000 pMod=82 wcR=0.555600 newSi=0.000000 wHLS=1.389000 siPrev=0 viaL=0.000000
+[12/03 19:48:48     20s] *Info: initialize multi-corner CTS.
+[12/03 19:48:48     20s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1284.6M, current mem=1055.8M)
+[12/03 19:48:49     20s] Reading timing constraints file 'SDC/bridge_soc_top_m.sdc' ...
+[12/03 19:48:49     20s] Current (total cpu=0:00:20.9, real=0:00:46.0, peak res=1302.0M, current mem=1302.0M)
+[12/03 19:48:49     20s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/bridge_soc_top_m.sdc, Line 9).
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File SDC/bridge_soc_top_m.sdc, Line 10).
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] INFO (CTE): Reading of timing constraints file SDC/bridge_soc_top_m.sdc completed, with 2 WARNING
+[12/03 19:48:49     20s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1309.6M, current mem=1309.6M)
+[12/03 19:48:49     20s] Current (total cpu=0:00:20.9, real=0:00:46.0, peak res=1309.6M, current mem=1309.6M)
+[12/03 19:48:49     20s] **WARN: (TA-976):	Path groups asserted by the group_path constraint are considered by the software to be global in nature - they cannot be restricted to specific constraint modes. Due to this restriction, the group_path constraint is not supported directly in the constraint files which are configured in mode-specific commands such as create_constraint_mode. The current group_path entry will be ignored. You can enter the group_path constraint interactively or as part of a general command script -  where it will be interpreted as global and will be in effect for all modes.
+[12/03 19:48:49     20s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[12/03 19:48:49     20s] Summary for sequential cells identification: 
+[12/03 19:48:49     20s]   Identified SBFF number: 4
+[12/03 19:48:49     20s]   Identified MBFF number: 0
+[12/03 19:48:49     20s]   Identified SB Latch number: 0
+[12/03 19:48:49     20s]   Identified MB Latch number: 0
+[12/03 19:48:49     20s]   Not identified SBFF number: 0
+[12/03 19:48:49     20s]   Not identified MBFF number: 0
+[12/03 19:48:49     20s]   Not identified SB Latch number: 0
+[12/03 19:48:49     20s]   Not identified MB Latch number: 0
+[12/03 19:48:49     20s]   Number of sequential cells which are not FFs: 0
+[12/03 19:48:49     20s] Total number of combinational cells: 17
+[12/03 19:48:49     20s] Total number of sequential cells: 4
+[12/03 19:48:49     20s] Total number of tristate cells: 0
+[12/03 19:48:49     20s] Total number of level shifter cells: 0
+[12/03 19:48:49     20s] Total number of power gating cells: 0
+[12/03 19:48:49     20s] Total number of isolation cells: 0
+[12/03 19:48:49     20s] Total number of power switch cells: 0
+[12/03 19:48:49     20s] Total number of pulse generator cells: 0
+[12/03 19:48:49     20s] Total number of always on buffers: 0
+[12/03 19:48:49     20s] Total number of retention cells: 0
+[12/03 19:48:49     20s] List of usable buffers: BUFX1
+[12/03 19:48:49     20s] Total number of usable buffers: 1
+[12/03 19:48:49     20s] List of unusable buffers:
+[12/03 19:48:49     20s] Total number of unusable buffers: 0
+[12/03 19:48:49     20s] List of usable inverters: INVX2 INVX1 INVX16 INVX32 INVX4 INVX8
+[12/03 19:48:49     20s] Total number of usable inverters: 6
+[12/03 19:48:49     20s] List of unusable inverters:
+[12/03 19:48:49     20s] Total number of unusable inverters: 0
+[12/03 19:48:49     20s] List of identified usable delay cells:
+[12/03 19:48:49     20s] Total number of identified usable delay cells: 0
+[12/03 19:48:49     20s] List of identified unusable delay cells:
+[12/03 19:48:49     20s] Total number of identified unusable delay cells: 0
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[12/03 19:48:49     20s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] TimeStamp Deleting Cell Server Begin ...
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] TimeStamp Deleting Cell Server End ...
+[12/03 19:48:49     20s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1339.1M, current mem=1339.1M)
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[12/03 19:48:49     20s] Summary for sequential cells identification: 
+[12/03 19:48:49     20s]   Identified SBFF number: 4
+[12/03 19:48:49     20s]   Identified MBFF number: 0
+[12/03 19:48:49     20s]   Identified SB Latch number: 0
+[12/03 19:48:49     20s]   Identified MB Latch number: 0
+[12/03 19:48:49     20s]   Not identified SBFF number: 0
+[12/03 19:48:49     20s]   Not identified MBFF number: 0
+[12/03 19:48:49     20s]   Not identified SB Latch number: 0
+[12/03 19:48:49     20s]   Not identified MB Latch number: 0
+[12/03 19:48:49     20s]   Number of sequential cells which are not FFs: 0
+[12/03 19:48:49     20s]  Visiting view : wc
+[12/03 19:48:49     20s]    : PowerDomain = none : Weighted F : unweighted  = 41.00 (1.000) with rcCorner = 0
+[12/03 19:48:49     20s]    : PowerDomain = none : Weighted F : unweighted  = 39.50 (1.000) with rcCorner = -1
+[12/03 19:48:49     20s]  Visiting view : bc
+[12/03 19:48:49     20s]    : PowerDomain = none : Weighted F : unweighted  = 22.20 (1.000) with rcCorner = 1
+[12/03 19:48:49     20s]    : PowerDomain = none : Weighted F : unweighted  = 21.00 (1.000) with rcCorner = -1
+[12/03 19:48:49     20s] TLC MultiMap info (StdDelay):
+[12/03 19:48:49     20s]   : bc + bc + 1 + no RcCorner := 21ps
+[12/03 19:48:49     20s]   : bc + bc + 1 + bc := 22.2ps
+[12/03 19:48:49     20s]   : wc + wc + 1 + no RcCorner := 39.5ps
+[12/03 19:48:49     20s]   : wc + wc + 1 + wc := 41ps
+[12/03 19:48:49     20s]  Setting StdDelay to: 41ps
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] TimeStamp Deleting Cell Server Begin ...
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] TimeStamp Deleting Cell Server End ...
+[12/03 19:48:49     20s] **WARN: (IMPSYC-2):	Timing information is not defined for cell pad_corner; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[12/03 19:48:49     20s] Type 'man IMPSYC-2' for more detail.
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] *** Summary of all messages that are not suppressed in this session:
+[12/03 19:48:49     20s] Severity  ID               Count  Summary                                  
+[12/03 19:48:49     20s] WARNING   IMPLF-58            29  MACRO '%s' has been found in the databas...
+[12/03 19:48:49     20s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[12/03 19:48:49     20s] WARNING   IMPLF-200            7  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/03 19:48:49     20s] WARNING   IMPLF-201           69  Pin '%s' in macro '%s' has no ANTENNADIF...
+[12/03 19:48:49     20s] WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+[12/03 19:48:49     20s] WARNING   IMPSYC-2             1  Timing information is not defined for ce...
+[12/03 19:48:49     20s] WARNING   IMPVL-159            4  Pin '%s' of cell '%s' is defined in LEF ...
+[12/03 19:48:49     20s] WARNING   TA-976               1  Path groups asserted by the group_path c...
+[12/03 19:48:49     20s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[12/03 19:48:49     20s] WARNING   TECHLIB-302          8  No function defined for cell '%s'. The c...
+[12/03 19:48:49     20s] WARNING   TECHLIB-459          1  Appending library '%s' to the previously...
+[12/03 19:48:49     20s] *** Message Summary: 125 warning(s), 0 error(s)
+[12/03 19:48:49     20s] 
+[12/03 19:48:49     20s] <CMD> saveDesign DBS/bridge_soc_top-import.enc
+[12/03 19:48:49     21s] #% Begin save design ... (date=12/03 19:48:49, mem=1343.2M)
+[12/03 19:48:49     21s] % Begin Save ccopt configuration ... (date=12/03 19:48:49, mem=1343.2M)
+[12/03 19:48:49     21s] % End Save ccopt configuration ... (date=12/03 19:48:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1344.6M, current mem=1344.6M)
+[12/03 19:48:49     21s] % Begin Save netlist data ... (date=12/03 19:48:49, mem=1344.7M)
+[12/03 19:48:49     21s] Writing Binary DB to DBS/bridge_soc_top-import.enc.dat.tmp/bridge_soc_top.v.bin in single-threaded mode...
+[12/03 19:48:49     21s] % End Save netlist data ... (date=12/03 19:48:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1348.8M, current mem=1344.8M)
+[12/03 19:48:49     21s] Saving symbol-table file ...
+[12/03 19:48:49     21s] Saving congestion map file DBS/bridge_soc_top-import.enc.dat.tmp/bridge_soc_top.route.congmap.gz ...
+[12/03 19:48:49     21s] % Begin Save AAE data ... (date=12/03 19:48:49, mem=1345.6M)
+[12/03 19:48:49     21s] Saving AAE Data ...
+[12/03 19:48:50     21s] % End Save AAE data ... (date=12/03 19:48:49, total cpu=0:00:00.0, real=0:00:01.0, peak res=1345.6M, current mem=1345.6M)
+[12/03 19:48:50     21s] Saving preference file DBS/bridge_soc_top-import.enc.dat.tmp/gui.pref.tcl ...
+[12/03 19:48:50     21s] Saving mode setting ...
+[12/03 19:48:50     21s] Saving global file ...
+[12/03 19:48:50     21s] % Begin Save floorplan data ... (date=12/03 19:48:50, mem=1349.7M)
+[12/03 19:48:50     21s] Saving floorplan file ...
+[12/03 19:48:50     21s] % End Save floorplan data ... (date=12/03 19:48:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1351.7M, current mem=1351.7M)
+[12/03 19:48:50     21s] Saving Drc markers ...
+[12/03 19:48:50     21s] ... No Drc file written since there is no markers found.
+[12/03 19:48:50     21s] % Begin Save placement data ... (date=12/03 19:48:50, mem=1352.2M)
+[12/03 19:48:50     21s] ** Saving stdCellPlacement_binary (version# 2) ...
+[12/03 19:48:50     21s] Save Adaptive View Pruning View Names to Binary file
+[12/03 19:48:50     21s] *** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1441.2M) ***
+[12/03 19:48:50     21s] % End Save placement data ... (date=12/03 19:48:50, total cpu=0:00:00.0, real=0:00:00.0, peak res=1352.4M, current mem=1352.4M)
+[12/03 19:48:50     21s] % Begin Save routing data ... (date=12/03 19:48:50, mem=1352.4M)
+[12/03 19:48:50     21s] Saving route file ...
+[12/03 19:48:51     21s] *** Completed saveRoute (cpu=0:00:00.0 real=0:00:01.0 mem=1438.2M) ***
+[12/03 19:48:51     21s] % End Save routing data ... (date=12/03 19:48:51, total cpu=0:00:00.0, real=0:00:01.0, peak res=1352.7M, current mem=1352.7M)
+[12/03 19:48:51     21s] Saving property file DBS/bridge_soc_top-import.enc.dat.tmp/bridge_soc_top.prop
+[12/03 19:48:51     21s] *** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1441.2M) ***
+[12/03 19:48:51     21s] % Begin Save power constraints data ... (date=12/03 19:48:51, mem=1354.1M)
+[12/03 19:48:51     21s] % End Save power constraints data ... (date=12/03 19:48:51, total cpu=0:00:00.0, real=0:00:00.0, peak res=1354.1M, current mem=1354.1M)
+[12/03 19:48:52     21s] Generated self-contained design bridge_soc_top-import.enc.dat.tmp
+[12/03 19:48:52     21s] #% End save design ... (date=12/03 19:48:52, total cpu=0:00:00.4, real=0:00:03.0, peak res=1380.5M, current mem=1357.4M)
+[12/03 19:48:52     21s] *** Message Summary: 0 warning(s), 0 error(s)
+[12/03 19:48:52     21s] 
+[12/03 19:48:52     21s] <CMD> setDrawView fplan
+[12/03 19:48:52     21s] <CMD> fit
+[12/03 19:49:06     23s] <CMD> floorPlan -site core7T -s 1070 910 80 80 80 80
+[12/03 19:49:06     23s] **WARN: (IMPFP-4026):	Adjusting core to 'Left' to 80.080000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/03 19:49:06     23s] **WARN: (IMPFP-4026):	Adjusting core to 'Bottom' to 80.080000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/03 19:49:06     23s] **WARN: (IMPFP-4026):	Adjusting core to 'Right' to 80.080000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/03 19:49:06     23s] **WARN: (IMPFP-4026):	Adjusting core to 'Top' to 80.080000 due to track/row misalignment. To force the value, specify the -noSnapToGrid option or use fpiSetSnapRule command to specify the die/core to different grid.
+[12/03 19:49:06     23s] **WARN: (IMPFP-3961):	The techSite 'corner' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/03 19:49:06     23s] Type 'man IMPFP-3961' for more detail.
+[12/03 19:49:06     23s] **WARN: (IMPFP-3961):	The techSite 'pad' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/03 19:49:06     23s] Type 'man IMPFP-3961' for more detail.
+[12/03 19:49:06     23s] Start create_tracks
+[12/03 19:49:06     23s] Generated pitch 1.12 in METAL6 is different from 0.9 defined in technology file in preferred direction.
+[12/03 19:49:06     23s] **WARN: (IMPFP-325):	Floorplan of the design is resized. All current floorplan objects are automatically derived based on specified new floorplan. This may change blocks, fixed standard cells, existing routes and blockages.
+[12/03 19:49:06     23s] <CMD> setDrawView fplan
+[12/03 19:49:06     23s] <CMD> fit
+[12/03 19:49:06     23s] <CMD> placeInstance soc/uart_tx_inst 318 575 R0
+[12/03 19:49:06     23s] **ERROR: (IMPTCM-162):	"soc/uart_tx_inst" does not match any object in design for specified type "inst " object in command "placeInstance".
+
+[12/03 19:49:06     23s] Usage: placeInstance [-help] <inst> <location> [{R0 R90 R180 R270 MX MX90 MY MY90}] [{ -fixed  | -placed  | -softFixed  }]
+[12/03 19:49:06     23s] 
+[12/03 19:49:06     23s] **ERROR: (IMPTCM-3):	"soc/uart_tx_inst" is not a valid object value for the 1th argument.
+
+[12/03 19:49:15     24s] <CMD> zoomBox -482.17800 -423.93500 2131.05300 1915.46450
+[12/03 19:49:15     24s] <CMD> zoomBox -1017.13750 -904.36000 2599.79150 2333.56350
+[12/03 19:49:16     24s] <CMD> zoomBox -1356.50900 -1208.22500 2898.70200 2601.09700
+[12/03 19:49:17     24s] <CMD> zoomBox -406.62400 -387.27200 1814.62300 1601.21800
+[12/03 19:49:17     24s] <CMD> zoomBox -251.02200 -252.79050 1637.03800 1437.42600
+[12/03 19:49:17     24s] <CMD> zoomBox 171.61500 111.69600 1157.19400 993.99950
+[12/03 19:49:18     24s] <CMD> zoomBox 431.21100 341.50150 868.51800 732.98450
+[12/03 19:49:19     24s] <CMD> zoomBox 85.52750 21.04350 1245.03250 1059.04800
+[12/03 19:49:20     24s] <CMD> zoomBox -422.68150 -450.08000 1798.56750 1538.41200
+[12/03 19:49:20     24s] <CMD> zoomBox -610.30750 -624.01400 2002.92700 1715.38850
+[12/03 19:49:20     24s] <CMD> zoomBox -831.04350 -828.64250 2243.35000 1923.59600
+[12/03 19:49:21     24s] <CMD> zoomBox -2178.54250 -2077.81100 3711.03100 3194.61450
+[12/03 19:49:21     24s] <CMD> zoomBox -2676.02550 -2538.99150 4252.88450 3663.86200
+[12/03 19:49:22     24s] <CMD> zoomBox -831.04450 -828.64350 2243.35000 1923.59600
+[12/03 19:49:22     24s] <CMD> zoomBox -609.11550 -622.22550 2004.12000 1717.17800
+[12/03 19:49:23     25s] <CMD> pan 108.18050 233.67700
+[12/03 19:49:24     25s] <CMD> zoomBox 137.35500 266.08350 1501.48050 1487.26700
+[12/03 19:49:24     25s] <CMD> zoomBox -130.37500 -3.00200 1757.68800 1687.21750
+[12/03 19:49:25     25s] <CMD> zoomBox -500.93550 -375.43850 2112.30050 1963.96550
+[12/03 19:49:25     25s] <CMD> zoomBox -736.58650 -612.28200 2337.80900 2139.95800
+[12/03 19:49:43     27s] invalid command name "get_instance"
+[12/03 19:50:42     34s] <CMD> placeInstance
+[12/03 19:50:42     34s] 
+[12/03 19:50:42     34s] Usage: placeInstance [-help] <inst> <location> [{R0 R90 R180 R270 MX MX90 MY MY90}] [{ -fixed  | -placed  | -softFixed  }]
+[12/03 19:50:42     34s] 
+[12/03 19:50:42     34s] **ERROR: (IMPTCM-32):	Wrong number of arguments specified for command "placeInstance".
+
+[12/03 19:50:46     34s] <CMD> placeInstance *
+[12/03 19:50:46     34s] **ERROR: (IMPTCM-161):	Object for command "placeInstance" is not a list, "*" matches more than one objects for specified type "inst " object in design.
+
+[12/03 19:50:46     34s] Usage: placeInstance [-help] <inst> <location> [{R0 R90 R180 R270 MX MX90 MY MY90}] [{ -fixed  | -placed  | -softFixed  }]
+[12/03 19:50:46     34s] 
+[12/03 19:50:46     34s] **ERROR: (IMPTCM-3):	"*" is not a valid object value for the 1th argument.
+
+[12/03 19:50:56     35s] <CMD> zoomBox -491.56950 -179.64000 1729.68150 1808.85400
+[12/03 19:50:56     35s] <CMD> zoomBox -186.64500 358.78700 972.86250 1396.79350
+[12/03 19:50:58     35s] <CMD> zoomBox -95.48550 520.29300 742.25850 1270.25250
+[12/03 19:50:59     35s] <CMD> zoomBox -137.36950 446.08750 848.21150 1328.39300
+[12/03 19:51:01     36s] <CMD> zoomBox -205.77050 402.66200 953.73700 1440.66850
+[12/03 19:51:01     36s] <CMD> zoomBox -380.02600 290.27000 1224.82850 1726.95750
+[12/03 19:51:01     36s] <CMD> zoomBox -488.10750 210.40000 1399.95700 1900.62050
+[12/03 19:51:02     36s] <CMD> zoomBox -91.31250 668.45800 1068.19500 1706.46450
+[12/03 19:51:03     36s] <CMD> zoomBox 260.82400 1073.99900 775.30400 1534.56850
+[12/03 19:51:04     36s] <CMD> zoomBox -91.31400 668.45700 1068.19500 1706.46500
+[12/03 19:51:05     36s] <CMD> zoomBox -670.94900 0.91650 1550.30750 1989.41500
+[12/03 19:51:05     36s] <CMD> zoomBox -1432.49100 -532.16300 1641.91300 2220.08500
+[12/03 19:51:06     36s] <CMD> zoomBox -1916.77850 -871.16400 1700.16800 2366.77500
+[12/03 19:51:08     37s] <CMD> pan 1333.54450 956.71150
+[12/03 19:51:09     37s] <CMD> zoomBox -176.98650 -588.12450 2044.27150 1400.37550
+[12/03 19:51:10     37s] <CMD> zoomBox 397.66100 -57.32650 834.97100 334.15950
+[12/03 19:51:11     37s] <CMD> zoomBox -451.81150 -841.97950 2622.61350 1910.28700
+[12/03 19:51:12     38s] <CMD> zoomBox 1240.03250 576.22300 1845.30850 1118.07400
+[12/03 19:51:14     38s] <CMD> zoomBox 1080.63750 442.39050 1918.39000 1192.35800
+[12/03 19:51:14     38s] <CMD> zoomBox 979.27350 357.28300 1964.86450 1239.59750
+[12/03 19:51:14     38s] <CMD> zoomBox 360.48850 -162.26300 2248.57150 1527.97450
+[12/03 19:51:19     39s] <CMD> pan -471.41050 -522.75150
+[12/03 19:51:20     39s] <CMD> zoomBox 100.84600 -12.41350 1705.71700 1424.28850
+[12/03 19:51:20     39s] <CMD> zoomBox 280.84900 114.95850 1644.98950 1336.15550
+[12/03 19:51:21     39s] <CMD> zoomBox -653.16750 -545.96300 1960.09850 1793.46800
+[12/03 19:51:31     41s] **ERROR: (IMPSYT-6000):	No Object Selected.
+[12/03 19:51:34     41s] <CMD> gui_select -rect {12.82650 1029.43400 151.43450 833.35450}
+[12/03 19:51:35     41s] <CMD> deselectAll
+[12/03 19:51:36     41s] <CMD> selectInst ser_rx_pad
+[12/03 19:51:39     42s] <CMD> zoomBox -1194.83750 -896.45550 3060.43100 2912.91800
+[12/03 19:51:40     42s] <CMD> zoomBox -487.01950 -343.88400 1734.25750 1644.63300
+[12/03 19:51:43     42s] <CMD> gui_select -rect {314.70900 308.41850 248.61700 199.22250}
+[12/03 19:51:43     42s] <CMD> deselectAll
+[12/03 19:51:46     43s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue Dec  3 19:51:46 2024
+  Total CPU time:     0:00:46
+  Total real time:    0:03:45
+  Peak memory (main): 1612.33MB
+
+[12/03 19:51:46     43s] 
+[12/03 19:51:46     43s] *** Memory Usage v#1 (Current mem = 1742.992M, initial mem = 483.887M) ***
+[12/03 19:51:46     43s] 
+[12/03 19:51:46     43s] *** Summary of all messages that are not suppressed in this session:
+[12/03 19:51:46     43s] Severity  ID               Count  Summary                                  
+[12/03 19:51:46     43s] WARNING   IMPLF-58            29  MACRO '%s' has been found in the databas...
+[12/03 19:51:46     43s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[12/03 19:51:46     43s] WARNING   IMPLF-200            7  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/03 19:51:46     43s] WARNING   IMPLF-201           69  Pin '%s' in macro '%s' has no ANTENNADIF...
+[12/03 19:51:46     43s] WARNING   IMPFP-325            1  Floorplan of the design is resized. All ...
+[12/03 19:51:46     43s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[12/03 19:51:46     43s] WARNING   IMPFP-4026           4  Adjusting core to '%s' to %f due to trac...
+[12/03 19:51:46     43s] ERROR     IMPSYT-6000          2  No Object Selected.                      
+[12/03 19:51:46     43s] WARNING   IMPSYC-2             1  Timing information is not defined for ce...
+[12/03 19:51:46     43s] WARNING   IMPVL-159            4  Pin '%s' of cell '%s' is defined in LEF ...
+[12/03 19:51:46     43s] ERROR     IMPTCM-3             2  "%s" is not a valid %s value for the %dt...
+[12/03 19:51:46     43s] ERROR     IMPTCM-32            1  Wrong number of arguments specified for ...
+[12/03 19:51:46     43s] ERROR     IMPTCM-161           1  Object for command "%s" is not a list, "...
+[12/03 19:51:46     43s] ERROR     IMPTCM-162           1  "%s" does not match any object in design...
+[12/03 19:51:46     43s] WARNING   TA-976               1  Path groups asserted by the group_path c...
+[12/03 19:51:46     43s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[12/03 19:51:46     43s] WARNING   TECHLIB-302          8  No function defined for cell '%s'. The c...
+[12/03 19:51:46     43s] WARNING   TECHLIB-459          1  Appending library '%s' to the previously...
+[12/03 19:51:46     43s] *** Message Summary: 132 warning(s), 7 error(s)
+[12/03 19:51:46     43s] 
+[12/03 19:51:46     43s] --- Ending "Innovus" (totcpu=0:00:43.3, real=0:03:43, mem=1743.0M) ---

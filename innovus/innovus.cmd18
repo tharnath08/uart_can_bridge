@@ -1,0 +1,87 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Dec  3 19:48:23 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_design_uniquify 1
+set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+set init_mmmc_file { CONF/picosoc.view }
+set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+set init_io_file { SCRIPTS/place_io_pad.io }
+set init_pwr_net { VDD }
+set init_gnd_net { VSS }
+init_design
+saveDesign DBS/bridge_soc_top-import.enc
+setDrawView fplan
+fit
+floorPlan -site core7T -s 1070 910 80 80 80 80
+setDrawView fplan
+fit
+placeInstance soc/uart_tx_inst 318 575 R0
+zoomBox -482.17800 -423.93500 2131.05300 1915.46450
+zoomBox -1017.13750 -904.36000 2599.79150 2333.56350
+zoomBox -1356.50900 -1208.22500 2898.70200 2601.09700
+zoomBox -406.62400 -387.27200 1814.62300 1601.21800
+zoomBox -251.02200 -252.79050 1637.03800 1437.42600
+zoomBox 171.61500 111.69600 1157.19400 993.99950
+zoomBox 431.21100 341.50150 868.51800 732.98450
+zoomBox 85.52750 21.04350 1245.03250 1059.04800
+zoomBox -422.68150 -450.08000 1798.56750 1538.41200
+zoomBox -610.30750 -624.01400 2002.92700 1715.38850
+zoomBox -831.04350 -828.64250 2243.35000 1923.59600
+zoomBox -2178.54250 -2077.81100 3711.03100 3194.61450
+zoomBox -2676.02550 -2538.99150 4252.88450 3663.86200
+zoomBox -831.04450 -828.64350 2243.35000 1923.59600
+zoomBox -609.11550 -622.22550 2004.12000 1717.17800
+pan 108.18050 233.67700
+zoomBox 137.35500 266.08350 1501.48050 1487.26700
+zoomBox -130.37500 -3.00200 1757.68800 1687.21750
+zoomBox -500.93550 -375.43850 2112.30050 1963.96550
+zoomBox -736.58650 -612.28200 2337.80900 2139.95800
+placeInstance
+placeInstance *
+zoomBox -491.56950 -179.64000 1729.68150 1808.85400
+zoomBox -186.64500 358.78700 972.86250 1396.79350
+zoomBox -95.48550 520.29300 742.25850 1270.25250
+zoomBox -137.36950 446.08750 848.21150 1328.39300
+zoomBox -205.77050 402.66200 953.73700 1440.66850
+zoomBox -380.02600 290.27000 1224.82850 1726.95750
+zoomBox -488.10750 210.40000 1399.95700 1900.62050
+zoomBox -91.31250 668.45800 1068.19500 1706.46450
+zoomBox 260.82400 1073.99900 775.30400 1534.56850
+zoomBox -91.31400 668.45700 1068.19500 1706.46500
+zoomBox -670.94900 0.91650 1550.30750 1989.41500
+zoomBox -1432.49100 -532.16300 1641.91300 2220.08500
+zoomBox -1916.77850 -871.16400 1700.16800 2366.77500
+pan 1333.54450 956.71150
+zoomBox -176.98650 -588.12450 2044.27150 1400.37550
+zoomBox 397.66100 -57.32650 834.97100 334.15950
+zoomBox -451.81150 -841.97950 2622.61350 1910.28700
+zoomBox 1240.03250 576.22300 1845.30850 1118.07400
+zoomBox 1080.63750 442.39050 1918.39000 1192.35800
+zoomBox 979.27350 357.28300 1964.86450 1239.59750
+zoomBox 360.48850 -162.26300 2248.57150 1527.97450
+pan -471.41050 -522.75150
+zoomBox 100.84600 -12.41350 1705.71700 1424.28850
+zoomBox 280.84900 114.95850 1644.98950 1336.15550
+zoomBox -653.16750 -545.96300 1960.09850 1793.46800
+gui_select -rect {12.82650 1029.43400 151.43450 833.35450}
+deselectAll
+selectInst ser_rx_pad
+zoomBox -1194.83750 -896.45550 3060.43100 2912.91800
+zoomBox -487.01950 -343.88400 1734.25750 1644.63300
+gui_select -rect {314.70900 308.41850 248.61700 199.22250}
+deselectAll

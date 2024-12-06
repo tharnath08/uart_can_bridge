@@ -1,0 +1,27 @@
+CADENCE IHNL11140
+$model
+SC_LIB/INVX1/schematic INVX1
+bridge_soc_top/bridge_soc_top/schematic bridge_soc_top
+PADS_LIB/pad_corner/schematic pad_corner
+SC_LIB/OR2X1/schematic OR2X1
+PADS_LIB/pad_out/schematic pad_out
+PADS_LIB/pad_vdd/schematic pad_vdd
+SC_LIB/NOR2X1/schematic NOR2X1
+PADS_LIB/pad_in/schematic pad_in
+SC_LIB/INVX2/schematic INVX2
+PADS_LIB/pad_gnd/schematic pad_gnd
+SC_LIB/XOR2X1/schematic XOR2X1
+SC_LIB/NAND3X1/schematic NAND3X1
+SC_LIB/ANTENNA/schematic ANTENNA
+SC_LIB/DFFQSRX1/schematic DFFQSRX1
+SC_LIB/MUX2X1/schematic MUX2X1
+SC_LIB/NAND2X1/schematic NAND2X1
+SC_LIB/AND2X1/schematic AND2X1
+SC_LIB/INVX4/schematic INVX4
+SC_LIB/INVX8/schematic INVX8
+$endmodel
+$net
+VDD! VDD!
+$endnet
+$param
+$endparam

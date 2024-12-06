@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1733463628 1733463631
+lvs_ExtOutFile RUNDIR /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs
+lvs_ExtOutFile RULES_FILE /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/_calibre.lvs_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {7 3 3 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs/bridge_soc_top.sp
+lvs_ExtOutFile EXTRACTION_REPORT bridge_soc_top.lvs.report.ext
+lvs_ExtOutFile ERC_DATABASE bridge_soc_top.erc.results
+lvs_ExtOutFile ERC_SUMMARY bridge_soc_top.erc.summary

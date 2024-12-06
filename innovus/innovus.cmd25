@@ -1,0 +1,62 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Dec  4 13:56:54 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_design_uniquify 1
+set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+set init_mmmc_file { CONF/picosoc.view }
+set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+set init_io_file { SCRIPTS/place_io_pad.io }
+set init_pwr_net { VDD }
+set init_gnd_net { VSS }
+init_design
+saveDesign DBS/bridge_soc_top-import.enc
+setDrawView fplan
+fit
+zoomBox 32.24400 9.47550 769.45450 458.66850
+zoomBox -78.66600 -35.29250 788.64100 493.17000
+zoomBox -209.14800 -87.96050 811.21300 533.76000
+zoomBox -362.88950 -148.75850 837.53550 582.67750
+gui_select -rect {789.39450 377.68900 759.88850 340.41850}
+pan 172.37650 349.23700
+zoomBox -47.25400 40.85550 973.10750 662.57650
+zoomBox -360.06750 -79.30100 1052.19800 781.21250
+pan -120.58150 200.37900
+zoomBox -480.64900 -311.54400 1180.84000 700.82500
+zoomBox -752.99100 -429.50850 1201.70200 761.51400
+pan 20.22950 439.80300
+zoomBox -1006.75500 -472.05050 1292.88400 929.15250
+floorPlan -site core7T -s 1070 910 80 80 80 80
+setDrawView fplan
+fit
+placeInstance soc* 318 575 R0
+zoomBox -82.11350 -8.31550 1522.73650 1428.36800
+zoomBox 244.41050 220.39150 2738.92000 1426.39600
+zoomBox 360.28550 287.44150 2480.61900 1312.54550
+zoomBox 458.58850 344.05150 2260.87200 1215.39000
+zoomBox -51.49600 50.30650 3401.11550 1719.51850
+zoomBox -705.93300 -324.52700 4916.07000 2393.50700
+zoomBox -994.67950 -492.76350 5619.44200 2704.92350
+zoomBox -1490.44300 -813.18500 7664.05150 3612.68000
+zoomBox -1148.11750 -361.59600 4473.88650 2356.43850
+zoomBox -1076.61750 -261.19100 3702.08650 2049.13850
+zoomBox -1015.84250 -175.84700 3046.05650 1787.93350
+zoomBox -963.08450 -102.93800 2489.53000 1566.27550
+zoomBox -901.42350 -46.25950 2033.29900 1372.57200
+zoomBox -743.12900 9.59350 1751.38550 1215.60050
+zoomBox -968.39550 -44.93650 1966.32800 1373.89550
+zoomBox -1545.20150 -184.56300 2516.70000 1779.21850

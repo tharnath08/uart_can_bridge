@@ -1,0 +1,9 @@
+FORMATVERSION 1
+ADDINST ANTENNA soc/DIODE_136 1 addPortAsNeeded
+INSTTERM A soc/n_2083 -
+ADDINST ANTENNA soc/DIODE_137 1 addPortAsNeeded
+INSTTERM A soc/n_717 -
+ADDINST ANTENNA soc/DIODE_138 1 addPortAsNeeded
+INSTTERM A soc/soc_cpu_decoded_rs1[0] -
+ADDINST ANTENNA soc/DIODE_139 1 addPortAsNeeded
+INSTTERM A soc/soc_cpu_decoded_rs1[0] -

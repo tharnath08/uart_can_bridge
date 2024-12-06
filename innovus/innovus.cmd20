@@ -1,0 +1,116 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Tue Dec  3 20:02:14 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_design_uniquify 1
+set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+set init_mmmc_file { CONF/picosoc.view }
+set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+set init_io_file { SCRIPTS/place_io_pad.io }
+set init_pwr_net { VDD }
+set init_gnd_net { VSS }
+init_design
+saveDesign DBS/bridge_soc_top-import.enc
+setDrawView fplan
+fit
+floorPlan -site core7T -s 1070 910 80 80 80 80
+setDrawView fplan
+fit
+placeInstance soc* 318 575 R0
+placeInstance soc* 318 575 R0
+placeInstance 318 575 R0
+placeInstance {soc_can_rx_inst_shift_reg_reg[77]} 318 575 R0
+zoomBox -290.49550 -281.99900 1930.75050 1706.49050
+zoomBox -520.21000 -524.39050 2093.02100 1815.00900
+setLayerPreference node_row -isSelectable 1
+setLayerPreference node_cell -isVisible 1
+setLayerPreference node_cell -isVisible 0
+setLayerPreference node_cell -isVisible 1
+setLayerPreference node_cell -isVisible 0
+setLayerPreference node_cell -isVisible 1
+zoomBox 55.79900 -5.60750 1943.85900 1684.60900
+zoomBox 989.88850 835.68100 1701.96950 1473.14550
+zoomBox 1304.53500 1119.06750 1620.48950 1401.91400
+zoomBox 1091.95200 952.66750 1697.22150 1494.51300
+zoomBox 541.21550 459.85150 1905.34300 1681.03700
+zoomBox -700.00550 -650.83150 2374.39600 2101.41400
+zoomBox -1093.75150 -1003.16750 2523.19150 2234.76850
+setLayerPreference node_blockage -isVisible 1
+zoomBox 652.70900 558.57250 1024.42250 891.33550
+zoomBox 682.71550 585.40500 998.67200 868.25350
+zoomBox 729.90000 627.59900 958.17900 831.95750
+zoomBox 527.01450 446.17250 1132.28900 988.02250
+zoomBox 118.62250 80.97650 1482.75850 1302.16950
+zoomBox -553.60850 -520.15300 2059.64850 1819.27000
+setLayerPreference node_row -isVisible 1
+setLayerPreference node_floorplan -isVisible 1
+setLayerPreference node_power -isVisible 1
+setLayerPreference node_overlay -isVisible 1
+setLayerPreference congestH -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+setLayerPreference congestV -color {#000066 #0000c9 #0053ff #00fcfa #00a953 #53a900 #f9fc00 #ff5300 #ff5858 #ffffff}
+fit
+setLayerPreference node_overlay -isVisible 0
+setLayerPreference node_overlay -isVisible 1
+fit
+setLayerPreference node_overlay -isVisible 0
+setLayerPreference node_overlay -isVisible 1
+fit
+zoomBox 359.65650 396.01100 1345.23550 1278.31450
+zoomBox -95.67100 -76.82950 1792.39050 1613.38850
+zoomBox -694.20900 -698.38800 2380.18450 2053.85050
+setLayerPreference node_overlay -isVisible 0
+setLayerPreference node_overlay -isVisible 1
+fit
+setLayerPreference node_track -isVisible 1
+setLayerPreference node_track -isVisible 0
+setLayerPreference node_track -isVisible 1
+setLayerPreference node_track -isVisible 0
+setLayerPreference node_track -isVisible 1
+setLayerPreference node_gird -isVisible 1
+setLayerPreference node_gird -isVisible 0
+setLayerPreference node_gird -isVisible 1
+setLayerPreference node_gird -isVisible 0
+setLayerPreference node_gird -isVisible 1
+setLayerPreference node_gird -isVisible 0
+zoomBox -2061.65100 -1067.44000 2193.56000 2741.88200
+zoomBox -2679.48400 -1386.07100 2326.64650 3095.48450
+zoomBox -1540.08800 -794.80750 2076.84200 2443.11700
+panCenter 1248.64450 1044.07150
+pan -421.11700 -740.32800
+panCenter -980.93750 1937.77600
+pan 1890.34900 1760.64100
+zoomBox -718.67550 -719.24050 2355.71550 2032.99550
+zoomBox -562.37100 -453.76150 2050.86150 1885.63950
+zoomBox -429.51250 -228.10400 1791.73550 1760.38700
+zoomBox -303.22050 -15.60550 1584.84050 1674.61200
+pan -46.40750 478.13100
+zoomBox 83.51500 796.02250 1069.09550 1678.32750
+zoomBox 337.43650 1195.34650 774.74450 1586.83050
+zoomBox 447.25800 1369.61200 641.29450 1543.31600
+zoomBox 459.57050 1389.90650 624.50150 1537.55500
+zoomBox 484.66150 1432.83650 585.95000 1523.51150
+zoomBox 477.84000 1420.95100 597.00300 1527.62750
+zoomBox 469.81400 1406.96800 610.00650 1532.47000
+zoomBox 460.37250 1390.51700 625.30500 1538.16700
+zoomBox 449.26450 1371.16350 643.30300 1544.86950
+zoomBox 402.73500 1290.09250 718.69550 1572.94450
+zoomBox 203.59950 943.12550 1041.36050 1693.10050
+zoomBox 2.71150 593.10400 1366.86650 1814.31400
+zoomBox -312.20350 34.24150 1909.09600 2022.77850
+zoomBox -637.79600 -513.19600 2436.66700 2239.10450
+pan 35.79600 -233.35800
+init_design

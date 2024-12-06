@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/bridge_soc_top.dv
+dv_start matched                                  
+dv_cell {bridge_soc_top} {bridge_soc_top} matched
+dv_obj_count -transformed_nets {5251 5251} -transformed_inst {6974 6974} -transformed_port {10 10}
+dv_end

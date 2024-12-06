@@ -1,0 +1,90 @@
+hnlLastStopCellInfo = '(
+                           ( "tsmc18" "nmos2v" "auCdl" "53" "1277969434" )
+                          ( "tsmc18" "pmos2v" "auCdl" "54" "1277969424" )
+                          ( "tsmc18" "nmos2v_mac" "auCdl" "53" "1277969424" )
+                          ( "tsmc18" "pmos2v_mac" "auCdl" "54" "1277969424" )
+                          ( "tsmc18" "pdio_m" "auCdl" "36" "1277969424" )
+                          ( "tsmc18" "ndio_m" "auCdl" "36" "1277969424" )
+                          ( "tsmc18" "dioden" "auCdl" "36" "1277969434" )
+                       )
+hnlLastMaxNameLength = 60
+hnlLastNamePrefix = "hnl_"
+hnlLastNetNamePrefix = "N"
+hnlLastInstNamePrefix = ""
+hnlLastModelNamePrefix = ""
+hnlLastGlobalNetPrefix = "G"
+hnlLastModulePrefix = "sub"
+hnlLastHierarchyDelimiter = "."
+hnlLastNetlistRevision = "__Revision1"
+hnlLastOptimizeCellGenerationInConfig = nil
+hnlLastMapNetFirstChar = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            "0"
+                            "1"
+                            "2"
+                            "3"
+                            "4"
+                            "5"
+                            "6"
+                            "7"
+                            "8"
+                            "9"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastMapNetInName = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastMapInstFirstChar = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            "0"
+                            "1"
+                            "2"
+                            "3"
+                            "4"
+                            "5"
+                            "6"
+                            "7"
+                            "8"
+                            "9"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastMapInstInName = '(
+                            "	"
+                            " "
+                            "$"
+                            ","
+                            "/"
+                            ":"
+                            ";"
+                            "="
+                          )
+hnlLastInstNameDifferentFrom = '( )
+hnlLastModelNameDifferentFrom = '( )
+hnlLastNetNameDifferentFrom = '( )
+hnlLastTermNameDifferentFrom = '( )
+hnlLastParamNameDifferentFrom = '( )
+hnlLastLibInfo = '(
+                    ( "SC_LIB" "1542345613" )
+                   ( "PADS_LIB" "1542480990" )
+                   ( "bridge_soc_top" "1733460769" )
+                  )
+hnlLastDesignVars = '( )

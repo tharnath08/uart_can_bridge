@@ -1,0 +1,132 @@
+2024/12/05 22:38:21 WARNING This OS does not appear to be a Cadence supported Linux configuration.
+2024/12/05 22:38:21 For more info, please run CheckSysConf in <cdsRoot/tools.lnx86/bin/checkSysConf <productId>
+
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.09s.
+
+*WARNING* '/home/u1500738/Projects/uart_can_bridge/virtuoso/cds.lib', Line 13: End of DEFINE command while expecting a path.
+*WARNING* '/home/u1500738/Projects/uart_can_bridge/virtuoso/cds.lib', Line 14: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RA1SHD_RD'
+
+*WARNING* '/home/u1500738/Projects/uart_can_bridge/virtuoso/cds.lib', Line 15: End of DEFINE command while expecting a path.
+*WARNING* '/home/u1500738/Projects/uart_can_bridge/virtuoso/cds.lib', Line 16: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RF2SH'
+
+*WARNING* '/home/u1500738/Projects/uart_can_bridge/virtuoso/cds.lib', Line 13: End of DEFINE command while expecting a path.
+*WARNING* '/home/u1500738/Projects/uart_can_bridge/virtuoso/cds.lib', Line 14: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RA1SHD_RD'
+*WARNING* '/home/u1500738/Projects/uart_can_bridge/virtuoso/cds.lib', Line 15: End of DEFINE command while expecting a path.
+*WARNING* '/home/u1500738/Projects/uart_can_bridge/virtuoso/cds.lib', Line 16: Skipping: '/research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/oa/RF2SH'
+
+Initializing from libInit.il for library tsmc18...
+   --  pcell18v1a.cdn
+   --  tsmc18_updateCDFs.ile
+   --  tsmc18.cxt
+
+Loading hnlInit.cxt 
+Running Artist Hierarchical Netlisting ...
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : AND2X1
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+Loading cdf.cxt 
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : MUX2X1
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : NOR2X1
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : NAND2X1
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : OR2X1
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : INVX1
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : INVX2
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : INVX8
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : XOR2X1
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : NAND3X1
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal gnd appearing in CDF termOrder for 
+		component   : INVX4
+		in cellview 
+: schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal RESET appearing in CDF termOrder for 
+		component   : DFFQSRX1
+		in cellview : schematic
+		of library  : SC_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+WARNING (AUCDL-42): Terminal DataInB appearing in CDF termOrder for 
+		component   : pad_in
+		in cellview : schematic
+		of library  : PADS_LIB
+is either invalid or duplicated. CDF termOrder for this component will be ignored.
+Ensure that termOrder matches actual terminals in cellview and re-netlist to reflect any change in termOrder.
+Nets will be printed in default terminal order for this component.
+
+End netlisting Dec  5 22:38:23 2024
+

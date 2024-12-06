@@ -1,0 +1,51 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "bridge_soc_top"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "VDD!"
+  hierDelim "."
+  netlistDir "/home/u1500738/Projects/uart_can_bridge/virtuoso/calibre/lvs"
+ )
+( model
+( "SC_LIB/INVX4/schematic" "INVX4" )
+( "SC_LIB/MUX2X1/schematic" "MUX2X1" )
+( "bridge_soc_top/bridge_soc_top/schematic" "bridge_soc_top" )
+( "PADS_LIB/pad_out/schematic" "pad_out" )
+( "SC_LIB/XOR2X1/schematic" "XOR2X1" )
+( "PADS_LIB/pad_vdd/schematic" "pad_vdd" )
+( "SC_LIB/INVX8/schematic" "INVX8" )
+( "SC_LIB/INVX2/schematic" "INVX2" )
+( "SC_LIB/NAND3X1/schematic" "NAND3X1" )
+( "SC_LIB/NOR2X1/schematic" "NOR2X1" )
+( "SC_LIB/INVX1/schematic" "INVX1" )
+( "SC_LIB/AND2X1/schematic" "AND2X1" )
+( "SC_LIB/OR2X1/schematic" "OR2X1" )
+( "SC_LIB/NAND2X1/schematic" "NAND2X1" )
+( "SC_LIB/DFFQSRX1/schematic" "DFFQSRX1" )
+( "PADS_LIB/pad_corner/schematic" "pad_corner" )
+( "PADS_LIB/pad_in/schematic" "pad_in" )
+( "SC_LIB/ANTENNA/schematic" "ANTENNA" )
+( "PADS_LIB/pad_gnd/schematic" "pad_gnd" )
+ )
+( "pad_gnd" "ihnl/cds14/map" )
+( "AND2X1" "ihnl/cds0/map" )
+( "XOR2X1" "ihnl/cds8/map" )
+( "pad_vdd" "ihnl/cds15/map" )
+( "MUX2X1" "ihnl/cds1/map" )
+( "INVX2" "ihnl/cds6/map" )
+( "INVX8" "ihnl/cds7/map" )
+( "ANTENNA" "ihnl/cds17/map" )
+( "DFFQSRX1" "ihnl/cds11/map" )
+( "NAND2X1" "ihnl/cds3/map" )
+( "pad_corner" "ihnl/cds16/map" )
+( "OR2X1" "ihnl/cds4/map" )
+( "NAND3X1" "ihnl/cds9/map" )
+( "bridge_soc_top" "ihnl/cds18/map" )
+( "pad_out" "ihnl/cds13/map" )
+( "pad_in" "ihnl/cds12/map" )
+( "NOR2X1" "ihnl/cds2/map" )
+( "INVX1" "ihnl/cds5/map" )
+( "INVX4" "ihnl/cds10/map" )
+ )

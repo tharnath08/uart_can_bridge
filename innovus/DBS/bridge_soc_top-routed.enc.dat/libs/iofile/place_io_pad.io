@@ -1,0 +1,1 @@
+/home/u1500738/Projects/uart_can_bridge/innovus/SCRIPTS/place_io_pad.io

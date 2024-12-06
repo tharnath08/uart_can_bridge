@@ -1,0 +1,15 @@
+[12/03 19:27:55      0s] 
+[12/03 19:27:55      0s] Cadence Innovus(TM) Implementation System.
+[12/03 19:27:55      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/03 19:27:55      0s] 
+[12/03 19:27:55      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[12/03 19:27:55      0s] Options:	
+[12/03 19:27:55      0s] Date:		Tue Dec  3 19:27:55 2024
+[12/03 19:27:55      0s] Host:		lnissrv4 (x86_64 w/Linux 4.18.0-553.5.1.el8_10.x86_64) (16cores*64cpus*Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz 22528KB)
+[12/03 19:27:55      0s] OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+[12/03 19:27:55      0s] 
+[12/03 19:27:55      0s] License:
+[12/03 19:27:55      0s] 		[19:27:55.041450] Configured Lic search path (21.01-s002): /uusoc/facility/cad_tools/Cadence/common_license:/uusoc/facility/cad_tools/Mentor/common_license
+
+[12/03 19:27:55      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[12/03 19:27:55      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.

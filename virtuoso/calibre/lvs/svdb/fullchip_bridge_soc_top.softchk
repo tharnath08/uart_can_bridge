@@ -1,0 +1,61 @@
+fullchip_bridge_soc_top 1000
+SOFTCHK DNW CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK poly_term CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK poly_term CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK rfdmy56 CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK nxwell CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK RFDUMMY5T CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK RFDUMMY6T CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK coll CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK coll_od2 CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK n_psub CONTACT.
+1 1 4 Dec  5 22:36:48 2024                                                      
+Net 1412 is selected for stamping.
+Rejected nets: 1411
+Net 1412 is selected for stamping.
+Rejected nets: 1411
+p 1 10
+CN fullchip_bridge_soc_top c 1 0 0 1 0 0 0
+DN 1411
+0 0
+1890000 0
+1890000 2020000
+1880000 2020000
+1880000 10000
+10000 10000
+10000 2010000
+1880000 2010000
+1880000 2020000
+0 2020000
+SOFTCHK psub CONTACT.
+1 1 4 Dec  5 22:36:48 2024                                                      
+Net 1412 is selected for stamping.
+Rejected nets: 1411
+Net 1412 is selected for stamping.
+Rejected nets: 1411
+p 1 10
+CN fullchip_bridge_soc_top c 1 0 0 1 0 0 0
+DN 1411
+0 0
+1890000 0
+1890000 2020000
+1880000 2020000
+1880000 10000
+10000 10000
+10000 2010000
+1880000 2010000
+1880000 2020000
+0 2020000
+SOFTCHK psub_term CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      
+SOFTCHK rw CONTACT.
+0 0 0 Dec  5 22:36:48 2024                                                      

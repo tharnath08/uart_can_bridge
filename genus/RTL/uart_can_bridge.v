@@ -1,3 +1,54 @@
+
+
+
+module bridge_soc_top (
+    
+	input clock,
+	input reset,
+
+	output Bridge_Serial_out,
+	input Serial_in,
+    output Bridge_Can_out,
+	input Can_rx,
+
+	input R_byte,
+	input T_byte,
+
+);
+
+
+    pad_in clk_pad    (.pad(clock),    .DataIn(clk_PAD));
+    pad_in rst_pad    (.pad(reset),    .DataIn(rst_PAD));
+
+    pad_out ser_tx_pad (.pad(Bridge_Serial_out), .DataOut(ser_tx_PAD));
+    pad_in  ser_rx_pad (.pad(Serial_in), .DataIn(ser_rx_PAD));
+
+    pad_out can_tx_pad (.pad(Bridge_Can_out), .DataOut(can_tx_PAD));
+    pad_in  can_rx_pad (.pad(Can_rx), .DataIn(can_rx_PAD));
+
+
+    pad_in  rbyte_pad (.pad(R_byte), .DataIn(rbyte_PAD));
+    pad_in  tbyte_pad (.pad(T_byte), .DataIn(tbyte_PAD));
+
+
+    
+    
+   uart_can_bridge soc (
+   .clock(clock),
+   .reset(rst_PAD),
+   .Bridge_Serial_out(ser_tx_PAD),
+   .Serial_in(ser_rx_PAD),
+   .Bridge_Can_out(can_tx_PAD),
+   .Can_rx(can_rx_PAD),
+   .R_byte(rbyte_PAD),
+   .T_byte(tbyte_PAD)
+   ); 
+
+
+    
+endmodule
+
+
 module uart_can_bridge (
     input wire clock,              // Clock
     input wire reset,              // Reset

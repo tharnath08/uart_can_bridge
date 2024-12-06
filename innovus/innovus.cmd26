@@ -1,0 +1,221 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Wed Dec  4 16:39:46 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+set init_design_uniquify 1
+freeDesign
+set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+set init_mmmc_file { CONF/picosoc.view }
+set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+set init_io_file { SCRIPTS/place_io_pad.io }
+set init_pwr_net { VDD }
+set init_gnd_net { VSS }
+init_design
+saveDesign DBS/bridge_soc_top-import.enc
+setDrawView fplan
+fit
+floorPlan -site core7T -s 1070 910 80 80 80 80
+setDrawView fplan
+fit
+placeInstance soc* 318 575 R0
+set init_design_uniquify 1
+freeDesign
+set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+set init_mmmc_file { CONF/picosoc.view }
+set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+set init_io_file { SCRIPTS/place_io_pad.io }
+set init_pwr_net { VDD }
+set init_gnd_net { VSS }
+init_design
+saveDesign DBS/bridge_soc_top-import.enc
+setDrawView fplan
+fit
+floorPlan -site core7T -s 1070 910 80 80 80 80
+setDrawView fplan
+fit
+saveDesign DBS/bridge_soc_top-fplan.enc
+globalNetConnect VDD -type pgpin -pin VDD -all -verbose
+globalNetConnect VSS -type pgpin -pin VSS -all -verbose
+globalNetConnect VDD -type tiehi
+globalNetConnect VSS -type tielo
+deleteIoFiller
+addIoFiller -cell pad_fill_32 -prefix FILLER -side n
+addIoFiller -cell pad_fill_16 -prefix FILLER -side n
+addIoFiller -cell pad_fill_8 -prefix FILLER -side n
+addIoFiller -cell pad_fill_4 -prefix FILLER -side n
+addIoFiller -cell pad_fill_2 -prefix FILLER -side n
+addIoFiller -cell pad_fill_1 -prefix FILLER -side n
+addIoFiller -cell pad_fill_01 -prefix FILLER -side n
+addIoFiller -cell pad_fill_005 -prefix FILLER -side n -fillAnyGap
+addIoFiller -cell pad_fill_32 -prefix FILLER -side s
+addIoFiller -cell pad_fill_16 -prefix FILLER -side s
+addIoFiller -cell pad_fill_8 -prefix FILLER -side s
+addIoFiller -cell pad_fill_4 -prefix FILLER -side s
+addIoFiller -cell pad_fill_2 -prefix FILLER -side s
+addIoFiller -cell pad_fill_1 -prefix FILLER -side s
+addIoFiller -cell pad_fill_01 -prefix FILLER -side s
+addIoFiller -cell pad_fill_005 -prefix FILLER -side s -fillAnyGap
+addIoFiller -cell pad_fill_32 -prefix FILLER -side e
+addIoFiller -cell pad_fill_16 -prefix FILLER -side e
+addIoFiller -cell pad_fill_8 -prefix FILLER -side e
+addIoFiller -cell pad_fill_4 -prefix FILLER -side e
+addIoFiller -cell pad_fill_2 -prefix FILLER -side e
+addIoFiller -cell pad_fill_1 -prefix FILLER -side e
+addIoFiller -cell pad_fill_01 -prefix FILLER -side e
+addIoFiller -cell pad_fill_005 -prefix FILLER -side e -fillAnyGap
+addIoFiller -cell pad_fill_32 -prefix FILLER -side w
+addIoFiller -cell pad_fill_16 -prefix FILLER -side w
+addIoFiller -cell pad_fill_8 -prefix FILLER -side w
+addIoFiller -cell pad_fill_4 -prefix FILLER -side w
+addIoFiller -cell pad_fill_2 -prefix FILLER -side w
+addIoFiller -cell pad_fill_1 -prefix FILLER -side w
+addIoFiller -cell pad_fill_01 -prefix FILLER -side w
+addIoFiller -cell pad_fill_005 -prefix FILLER -side w -fillAnyGap
+addRing -type core_rings -follow core -nets {VDD VDD VSS VSS} -center 1 -width {top 10 bottom 10 left 10 right 10} -spacing {top 4 bottom 4 left 4 right 4} -center 1 -layer {top METAL5 bottom METAL5 left METAL6 right METAL6} -use_wire_group 1 -extend_corner {} -jog_distance 0 -snap_wire_center_to_grid None -threshold 0
+addStripe -nets {VDD VSS} -layer METAL6 -direction vertical -width 5 -spacing 5 -number_of_sets 10 -start_from left -start_offset 25 -stop_offset 30 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit METAL6 -padcore_ring_bottom_layer_limit METAL1 -block_ring_top_layer_limit METAL6 -block_ring_bottom_layer_limit METAL1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addStripe -nets {VDD VSS} -layer METAL5 -direction horizontal -width 5 -spacing 5 -number_of_sets 9 -start_from left -start_offset 30 -stop_offset 30 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit METAL6 -padcore_ring_bottom_layer_limit METAL1 -block_ring_top_layer_limit METAL6 -block_ring_bottom_layer_limit METAL1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+saveDesign DBS/bridge_soc_top-power.enc
+fit
+sroute -connect { blockPin corePin padPin floatingStripe} -layerChangeRange { METAL1(1) METAL6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPintarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -crossoverViaLayerRange { METAL1(1) METAL6(6) } -nets { VDD VSS } -allowJogging 1 -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { METAL1(1) METAL6(6)}
+fit
+saveDesign DBS/bridge_soc_top-power-routed.enc
+setMultiCpuUsage -localCpu 2 -keepLicense true -acquireLicense 2
+setDesignMode -process 180
+setDesignMode -topRoutingLayer 4
+setPlaceMode -timingDriven true -congEffort high -placeIOPins 1 -place_global_max_density 0.45
+place_design
+setDrawView place
+checkPlace ./RPT/place.rpt
+saveDesign DBS/bridge_soc_top-placed.enc
+zoomBox -667.89400 78.63400 2303.75350 1515.31750
+zoomBox -303.92550 323.59400 1843.09000 1361.59800
+zoomBox -162.16850 418.87350 1662.79500 1301.17700
+zoomBox 142.69200 622.40250 1263.44850 1164.24750
+zoomBox 372.66950 757.33900 957.71150 1040.18550
+zoomBox 494.05900 824.04750 799.45450 971.69500
+zoomBox 545.29200 851.82550 732.84400 942.50000
+zoomBox 557.52250 858.45700 716.94200 935.53050
+zoomBox 576.75550 868.88450 691.93700 924.57050
+zoomBox 567.91850 864.09300 703.42600 929.60600
+zoomBox 557.52200 858.45650 716.94250 935.53050
+zoomBox 530.90100 844.04300 751.55300 950.72000
+zoomBox 470.62400 811.44500 829.92100 985.15200
+zoomBox 410.62700 778.99850 907.92500 1019.42400
+zoomBox 372.52600 758.41750 957.58250 1041.27100
+zoomBox 274.96700 705.71900 1084.73400 1097.21200
+zoomBox 212.92600 672.20650 1165.59350 1132.78650
+zoomBox 54.06650 586.39600 1372.63850 1223.87750
+zoomBox -46.95700 531.82650 1504.30450 1281.80500
+zoomBox -158.40050 471.90700 1666.61400 1354.23500
+zoomBox -275.95400 390.76200 1871.12200 1428.79500
+zoomBox -414.25250 295.29750 2111.71950 1516.51300
+zoomBox -576.95600 182.98650 2394.77550 1619.71050
+zoomBox -768.37200 50.85600 2727.78250 1741.11950
+zoomBox -555.51250 200.01550 2416.21900 1636.73950
+zoomBox -88.68950 525.48150 1736.32550 1407.81000
+zoomBox 22.75300 603.17900 1574.01650 1353.15850
+zoomBox 270.03700 773.07400 1222.70700 1233.65550
+zoomBox -223.57800 434.45900 1923.50100 1472.49350
+zoomBox -381.01450 328.05800 2144.96050 1549.27500
+zoomBox -566.23450 202.88050 2405.50100 1639.60650
+zoomBox -363.59200 354.32600 2162.38350 1575.54350
+zoomBox -2224.14450 -506.44150 3468.76900 2245.87500
+zoomBox -1722.46300 -274.34300 3116.51350 2065.12600
+zoomBox -1296.03400 -77.05950 2817.09650 1911.48950
+zoomBox -7093.82050 -2256.18150 8000.76350 5041.50050
+zoomBox -2130.10100 -390.54700 3562.81450 2361.77050
+zoomBox -693.42350 149.43450 2278.31400 1586.16150
+zoomBox 56.53100 431.30750 1607.79650 1181.28800
+zoomBox 424.88650 744.46750 1009.94550 1027.32200
+zoomBox 596.27100 890.17150 731.78250 955.68650
+zoomBox 621.70450 904.11550 692.44350 938.31500
+zoomBox 639.56900 914.14800 670.95700 929.32300
+zoomBox 643.57450 916.45650 662.85100 925.77600
+zoomBox 648.21200 919.12900 653.46600 921.66900
+zoomBox 647.77500 918.67350 655.04750 922.18950
+zoomBox 645.17450 915.96400 664.45850 925.28700
+zoomBox 636.32550 906.74750 696.48250 935.83100
+zoomBox 608.72300 877.99650 796.37950 968.72150
+zoomBox 560.41150 794.05150 1145.78650 1077.05900
+zoomBox 395.35800 619.73000 1714.64650 1257.55800
+zoomBox -94.63500 102.22350 3403.41800 1793.40500
+gui_select -rect {1966.75500 1410.57550 2496.82650 1479.98950}
+gui_select -next -point {542.713 112.741}
+gui_select -next -point {542.713 112.741}
+gui_select -rect {1813.20250 640.70900 2408.48150 874.19300}
+gui_select -append -rect {2408.48150 874.19300 2654.58600 1034.05600}
+zoomBox 211.41800 200.03400 3184.76350 1637.53850
+zoomBox -1376.66000 -307.49600 4319.33800 2446.31200
+zoomBox -526.82450 325.58550 2971.23100 2016.76800
+zoomBox -152.08200 579.23150 2375.26250 1801.11050
+zoomBox 347.28100 843.74000 1666.57050 1481.56850
+zoomBox 557.58650 954.86200 1367.79550 1346.56850
+zoomBox 635.46000 1005.15500 1220.83600 1288.16300
+zoomBox 713.42500 1055.95450 1072.91950 1229.75700
+zoomBox 744.37850 1075.33000 1004.11350 1200.90250
+zoomBox 766.74150 1089.32900 954.40100 1180.05550
+zoomBox 775.25550 1095.08400 934.76600 1172.20150
+zoomBox 782.49250 1099.97550 918.07650 1165.52550
+zoomBox 793.87250 1107.66750 891.83200 1155.02750
+zoomBox 808.03400 1117.24000 859.17050 1141.96250
+zoomBox 810.35350 1118.80800 853.82000 1139.82250
+zoomBox 808.03350 1117.23950 859.17050 1141.96250
+zoomBox 802.09250 1113.22400 872.87050 1147.44250
+zoomBox 798.31450 1110.67000 881.58300 1150.92750
+zoomBox 775.14500 1095.43900 934.66350 1172.56050
+zoomBox 744.64700 1075.79050 1004.39800 1201.37050
+zoomBox 672.41900 1029.59300 1170.02100 1270.16550
+zoomBox 585.37000 957.80550 1395.63250 1349.53800
+pan -126.68000 296.91500
+zoomBox 396.52500 835.94100 1349.77500 1296.80250
+zoomBox 323.39000 781.41850 1444.86050 1323.60850
+pan 18.88250 711.59000
+zoomBox 482.25100 1113.01550 1292.51350 1504.74800
+zoomBox 683.90700 1231.19050 1043.42450 1405.00400
+zoomBox 830.69850 1317.21250 862.10500 1332.39650
+zoomBox -1690.37100 -178.34150 4006.52700 2575.90150
+zoomBox -2137.72450 -443.73050 4564.50900 2796.55550
+zoomBox -4868.62350 -2063.81800 7970.75150 4143.55250
+zoomBox 28.88150 513.08600 1348.38100 1151.01600
+zoomBox 123.85700 542.84000 1245.43150 1085.08050
+zoomBox 204.58600 568.13100 1157.92450 1029.03550
+zoomBox -213.26000 436.20850 1613.03850 1319.15750
+zoomBox -545.83050 326.08500 1981.91800 1548.15950
+zoomBox -756.12600 253.12550 2217.69600 1690.86000
+zoomBox -1294.59900 66.30850 2821.41750 2056.25250
+pan 175.72900 1167.85300
+panCenter -1118.87000 1863.19800
+zoomBox -2395.63850 1176.71050 132.11100 2398.78550
+zoomBox -2876.10950 985.80600 622.50600 2677.25950
+zoomBox -3271.12900 876.65600 844.89000 2866.60150
+pan 2012.22100 3479.51950
+pan -148.50350 957.43700
+zoomBox -807.12400 79.03150 2166.70050 1516.76750
+zoomBox -98.52750 484.18800 1453.82900 1234.69600
+zoomBox 213.05300 678.17900 1166.39400 1139.08450
+pan 29.81000 639.39900
+zoomBox 158.69400 798.83450 1280.27200 1341.07650
+zoomBox 314.40550 898.02600 1124.74650 1289.79650
+zoomBox 470.84400 997.68050 968.49550 1238.27700
+zoomBox 589.85150 1073.49150 849.63000 1199.08500
+zoomBox 470.84050 997.67950 968.49750 1238.27850
+zoomBox 158.68300 798.82900 1280.27850 1341.07950
+zoomBox -544.83900 350.67150 1982.95500 1572.76800
+zoomBox -710.07450 163.70900 2263.80100 1601.46950
+zoomBox -904.46900 -56.24700 2594.20800 1635.23600
+zoomBox -1133.16800 -315.01850 2982.92250 1674.96150
+zoomBox -1718.76450 -977.61750 3978.24650 1776.68000

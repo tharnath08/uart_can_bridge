@@ -16,7 +16,7 @@ module can_tx (
               STOP      = 3'b011;
 
     reg [2:0] state, next_state;   // State registers
-    reg [106:0] shift_reg;         // Shift register for data
+    reg [106:0] shift_reg = 107'b0;         // Shift register for data
     reg [6:0] status_reg;          // Bit counter to track data bits
     reg [6:0] Control = 6'b100000; // Control field for CAN Frame DLC | RTR | IDE
     reg [1:0] ACK = 2'b11;         // ACK field for CAN Frame
@@ -39,47 +39,57 @@ module can_tx (
             end     
             if (state != next_state) begin
                 statev <= ~statev; // Use non-blocking assignment
-            end      
+            end
+
+            case (state)
+                IDLE: begin
+                    if (Frame_ready && Load_frame_datareg) begin
+                        shift_reg <= {7'b1111111, ACK, 1'b1, CRC, can_tx_data_bus, Control, Can_ID_Bus, 1'b0}; // Load Shift Reg
+                    end
+                end   
+                STOP: begin
+                    shift_reg <= 107'b1111111111; // Adjust size if necessary
+                    status_reg <= 0;
+                end
+
+            endcase
         end
     end
 
     // Combinational Block
     always @(*) begin
-        next_state = state;
-        Can_out = 1'b1; // Default output state
+        next_state <= state;
+        Can_out <= 1'b1; // Default output state
         case (state)
             IDLE: begin
                 if (Frame_ready && Load_frame_datareg) begin
-                    shift_reg = {7'b1111111, ACK, 1'b1, CRC, can_tx_data_bus, Control, Can_ID_Bus, 1'b0}; // Load Shift Reg
-                    next_state = START;
+                    next_state <= START;
                 end else begin
-                    next_state = IDLE;
+                    next_state <= IDLE;
                 end
-                Can_out = 1'b1; 
+                Can_out <= 1'b1; 
             end
             START: begin
                 if (T_frame) begin
-                    next_state = TRANSMIT;
-                    Can_out = shift_reg[0]; // Transmit Start Bit
+                    next_state <= TRANSMIT;
+                    Can_out <= shift_reg[0]; // Transmit Start Bit
                 end else begin
-                    next_state = START;
+                    next_state <= START;
                 end
             end
             TRANSMIT: begin
-                Can_out = shift_reg[0]; // Transmit Current Bit
+                Can_out <= shift_reg[0]; // Transmit Current Bit
                 if (status_reg < 106) begin
-                    next_state = TRANSMIT;
+                    next_state <= TRANSMIT;
                 end else begin
-                    next_state = STOP;
+                    next_state <= STOP;
                 end
             end
             STOP: begin // Reset Device
-                Can_out = 1;
-                next_state = IDLE;
-                status_reg = 0;
-                shift_reg <= 107'b1111111111; // Adjust size if necessary
+                Can_out <= 1;
+                next_state <= IDLE;
             end
-            default: next_state = IDLE;
+            default: next_state <= IDLE;
         endcase
     end
 endmodule

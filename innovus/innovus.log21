@@ -1,0 +1,146 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Tue Dec  3 20:06:05 2024
+Host:		lnissrv4 (x86_64 w/Linux 4.18.0-553.5.1.el8_10.x86_64) (16cores*64cpus*Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz 22528KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		[20:06:05.041322] Configured Lic search path (21.01-s002): /uusoc/facility/cad_tools/Cadence/common_license:/uusoc/facility/cad_tools/Mentor/common_license
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (1029 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> set init_verilog HDL/GATE/bridge_soc_top_m.v
+<CMD> init_design
+**WARN: (IMPSYT-10026):	No LEF physical data was provided but timing libraries were given, so only timing analysis can be run. Any commands that require physical data will fail. This mode is meant for doing Tempus vs Innovus comparisons using common scripts, and is not intended for normal usage.
+Use timer mode.
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.36min, fe_real=0.87min, fe_mem=1059.1M) ***
+#% Begin Load netlist data ... (date=12/03 20:06:57, mem=998.1M)
+*** Begin netlist parsing (mem=1059.1M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'HDL/GATE/bridge_soc_top_m.v'
+Module pad_corner is not defined and will be treated as an empty module.
+Module pad_vdd is not defined and will be treated as an empty module.
+Module pad_gnd is not defined and will be treated as an empty module.
+Module pad_in is not defined and will be treated as an empty module.
+Module pad_out is not defined and will be treated as an empty module.
+Module NAND3X1 is not defined and will be treated as an empty module.
+Module NOR2X1 is not defined and will be treated as an empty module.
+Module INVX2 is not defined and will be treated as an empty module.
+Module OR2X1 is not defined and will be treated as an empty module.
+Module NAND2X1 is not defined and will be treated as an empty module.
+Module DFFQSRX1 is not defined and will be treated as an empty module.
+Module MUX2X1 is not defined and will be treated as an empty module.
+Module AND2X1 is not defined and will be treated as an empty module.
+Module XOR2X1 is not defined and will be treated as an empty module.
+Module INVX16 is not defined and will be treated as an empty module.
+Module INVX4 is not defined and will be treated as an empty module.
+Module INVX8 is not defined and will be treated as an empty module.
+Module INVX1 is not defined and will be treated as an empty module.
+
+*** Memory Usage v#1 (Current mem = 1062.059M, initial mem = 483.887M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1062.1M) ***
+#% End Load netlist data ... (date=12/03 20:06:57, total cpu=0:00:00.0, real=0:00:00.0, peak res=1005.9M, current mem=1005.9M)
+Top level cell is bridge_soc_top.
+Hooked 0 DB cells to tlib cells.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'pad_in' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'OR2X1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'INVX2' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'NOR2X1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'NAND3X1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'pad_out' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'INVX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'INVX8' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'INVX4' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'INVX16' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'XOR2X1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'AND2X1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'MUX2X1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'DFFQSRX1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+**WARN: (IMPDB-2504):	Unable to find netlist cell in the design data of the library or LEF. The 'NAND2X1' cell is instantiated in the Verilog netlist, but not defined in the library or design data.  Its pin directions might be derived incorrectly. Include the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+Type 'man IMPDB-2504' for more detail.
+18 empty module found.
+Starting recursive module instantiation check.
+No recursion found.
+Term dir updated for 0 vinsts of 18 cells.
+Building hierarchical netlist for Cell bridge_soc_top ...
+*** Netlist is unique.
+** info: there are 19 modules.
+** info: there are 0 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1109.473M, initial mem = 483.887M) ***
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+Extraction setup Started 
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+WARNING   IMPSYT-10026         1  No LEF physical data was provided but ti...
+WARNING   IMPDB-2504          15  Unable to find netlist cell in the desig...
+*** Message Summary: 17 warning(s), 0 error(s)
+
+<CMD> zoomBox 0.00900 0.01200 0.09100 0.08500
+<CMD> zoomBox -0.01700 -0.01000 0.11600 0.10900
+<CMD> zoomBox -0.06000 -0.04700 0.15800 0.14800
+<CMD> zoomBox -0.29000 -0.25300 0.39000 0.35600
+<CMD> zoomBox -0.03300 -0.02400 0.12600 0.11800
+<CMD> zoomBox -0.02100 -0.01400 0.11400 0.10700
+<CMD> zoomBox 0.00500 0.00900 0.08800 0.08300
+<CMD> zoomBox -0.03900 -0.01600 0.09800 0.10700
+<CMD> setEditMode -use_fixVia 0
+<CMD> setEditMode -use_fixVia false
+<CMD> setEditMode -reset -use_fixVia
+**ERROR: (IMPQTF-4044):	Error occurs when 'sprFormEdit::updateToolbarLayer we.changeLayer.menu' is executed with the error message: 'can't read "sprVarEdit(layer_horizontal)": no such element in array'. This is probably an inner GUI action error. Use the TCL command directly instead of the GUI interactive.
+<CMD> set init_design_uniquify 1
+<CMD> set init_lef_file { /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/tech.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/padlib_tsmc180.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/full_custom_lib/lef/sclib_tsmc180_antenna.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RA1SHD_RD/RA1SHD_RD_ant.lef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH.vclef  /research/ece/lnis-teaching/Designkits/tsmc180nm/arm_ip/RF2SH/RF2SH_ant.lef }
+<CMD> set init_mmmc_file { CONF/picosoc.view }
+<CMD> set init_verilog { HDL/GATE/bridge_soc_top_m.v }
+<CMD> set init_io_file { SCRIPTS/place_io_pad.io }
+<CMD> set init_pwr_net { VDD }
+<CMD> set init_gnd_net { VSS }
+<CMD> init_design
+**ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+
+<CMD> floorPlan
+
+Usage: floorPlan [-help] [-adjustToSite] [-coreMarginsBy {io die}]
+                 [-dieSizeByIoHeight {min max}] [-flip {n s f}]
+                 [-fplanOrigin {center llcorner}] [-noResize] [-noSnapToGrid]
+                 [-overlapSameSiteRow] {-b <die_box io_box core_box> | -s <W H Left Bottom Right Top> | -d <W H Left Bottom Right Top> | -r <aspectRatio [rowDensity [Left Bottom Right Top]]> | -su <aspectRatio [stdCellDensity [Left Bottom Right Top]]> | -keepShape <util>} [-site <site> | -siteOnly <site>]
+
+**ERROR: (IMPTCM-32):	Wrong number of arguments specified for command "floorPlan".
+
+<CMD> place_design
+Invalid pointer argument "0x0" in "dbFPlanBox"
+Usage: dbFPlanBox <fplanPtr>
+
+*** Memory Usage v#1 (Current mem = 1344.277M, initial mem = 483.887M) ***
+*** Message Summary: 17 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:38.4, real=0:03:41, mem=1344.3M) ---
